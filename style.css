@@ -1,0 +1,7 @@
+body{
+  margin: auto;
+}
+
+.p-3 {
+  padding: ($spacer * .5) !important;
+}
