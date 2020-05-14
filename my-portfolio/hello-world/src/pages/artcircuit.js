@@ -33,7 +33,7 @@ export default ()=> (
   <Banner
     image={ArtCircuitBanner}
     color="black"
-    title="Art + Human Circuit"
+    title="Art + Dumbass Circuit"
     description= 'Bringing communities together to play and engage with art through IoT solutions.'
     team="Team: Amy Lu, Katie McTigue, Matthew Fang, Rissa Lee"
     role="Role: User Research, Archiving and Documentation"
