@@ -8,13 +8,15 @@ export default (props)=> (
     <div className="banner-image">{console.log(props)}
     <img src={props.image} alt="First slide" />
     </div>
-    <div className="banner-title"><h1>{props.title}</h1>
-  
-      <div className="banner-description">
+    {console.log(props)}
+    <div className={`banner-title ${props.mode}`}><h1>{props.title}</h1>
+      <div className={`banner-description ${props.mode} ${props.description ? '' : 'hidden'}`}>
       <h3>{props.description}</h3><br />
-      {props.team}<br />
+      <div className={`${props.team ? '' : 'hidden'}`}>
       {props.role}<br />
+      {props.team}<br />
       {props.projectLength}<br />
+      </div>
       </div>
     </div>
 

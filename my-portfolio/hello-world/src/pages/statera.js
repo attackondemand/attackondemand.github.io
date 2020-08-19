@@ -1,24 +1,63 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
+
+import {SRLWrapper} from "simple-react-lightbox";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 import {Carousel, CarouselItem} from 'react-bootstrap'
+import StateraThumb from "../assets/statera-v2.png"
+
 import Nav from "../components/Navbar"
 import Banner from "../components/Banner-copy"
 import Footer from "../components/Footer"
-import Pool from "../assets/statera-responsive-banner.png"
-import Coach from "../assets/coach-perspective.jpg"
-import Student from "../assets/student-perspective.jpg"
-import StudentStress from "../assets/student-stress-iphone.png"
-import CoachStress from "../assets/coach-stress-iphone.png"
-import favicon from "../assets/favicon.png"
+import Pool from "../assets/statera-screenbanner.png"
+import Scoreboard from "../assets/statera-scoreboard.png"
+import JourneyMapping from "../assets/statera-journeymapping.png"
+import SwimmerJourneyMap from "../assets/statera-parents-perspective.png"
+import CoachJourneyMap from "../assets/statera-coach-perspective.png"
+import SwimmerJourneyMapSmall from "../assets/statera-parents-perspective-small.png"
+import CoachJourneyMapSmall from "../assets/statera-coach-perspective-small.png"
+import Responsive from "../assets/statera-responsive.png"
+import Responsive2 from "../assets/new-responsive.png"
+import StressAssessment from "../assets/stressassessment.webm"
+import StressAssessmentBackup from "../assets/stress-assessment.mp4"
+import StressAssessmentGif from "../assets/stress-assessment.gif"
+import Performance from "../assets/Coach - Performance Desktop.png"
+import PerformanceDemo from "../assets/Performance-Demo.png"
+import Performance2 from "../assets/Performance-Statera-2.png"
+import Architecture from "../assets/statera-architecture.png"
+import Wireframe1 from "../assets/statera-wireframe-1.jpg"
+import Wireframe1Small from "../assets/statera-wireframe-1 small.jpg"
+import Wireframe2 from "../assets/statera-wireframe-2.jpg"
+import Wireframe2Small from "../assets/statera-wireframe-2-small.jpg"
+import Wireframe4Small from "../assets/statera-wireframe4-small.png"
+import Wireframe5Small from "../assets/statera-wireframe5-small.png"
+import Wireframe6Small from "../assets/statera-wireframe-6-small.png"
+import DataIcon from "../assets/statera-data-icon.png"
+import DowntimeIcon from "../assets/statera-downtime-icon.png"
+import DataFocus from "../assets/statera-focus-icon.png"
+import Wireframe3 from "../assets/stress-web-small.png"
 
+
+import favicon from "../assets/favicon.png"
+const options ={
+  settings: {
+    autoplaySpeed: 0,
+  },
+  buttons: {
+    showCloseButton: true,
+  }
+}
 
 export default ()=> (
 
   <div id="outercontainer">
   <Helmet>
     <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Statera: Helping student athletes communicate stress to coaches and reduce burnout" />
+    <meta property="og:image" content={StateraThumb} />
     <title>Michael Silvestre</title>
     <link rel="canonical" href="http://msilvestre.xyz" />
     <link rel="icon" href={favicon} />
@@ -29,104 +68,196 @@ export default ()=> (
     image={Pool}
     title="Statera"
     color="#727F84"
-    description="Helping student athletes communicate stress to coaches"
+    description="Helping student athletes communicate stress to coaches and reduce burnout"
     team="Team: Amrita Sakhrani, Kathy Song"
-    role="Role: User Research, Responsive Website, Mobile Design"
+    role="Project Focus: User Research, Responsive Website, Mobile Design"
     projectLength="Timeline: August 2019 - December 2019"
   />
   </Fade>
   <div className="content">
   <div className="content-container">
-<div className="content-photo-left">
+  <div className="center-content">
+  <div className="section-header"> THE CLIFF'S NOTES</div><br/><br/>
+  <strong>Problem</strong>
+  <div className="serif-header">High School swimmers struggle balancing school, practice, and meets, leading talented athletes to prematurely quit their teams due to stress and burnout.</div><br/><br/>
 
-  <div className="col">
-    <h2>Overview</h2>
-    <p>Statera is a productivity app for coaches and student athletes that prioritizes emotional health to build stronger, more well-balanced athletes. We help athletes create a line of communication with their coaches that helps them talk about personal and academic stress within the high-pressure schedules of youth sports through the ability for athletes to rank their current stress levels.</p>
+  <strong>Solution</strong><br/>
+  <div className="serif-header">Give coaches visibility into the hectic high school schedule.</div>
+  Statera is a platform for mobile and desktop that establishes a dialogue between student athletes and coaches around emotional health and sports to help decrease burnout. Through Statera, students can assess and submit their current stress levels to their coaches to build practice regimens considerate of their students’ academic workloads.
   </div>
+  <div className="img-text-box blue-grey">
+    <div><img src={Responsive2} alt="responsive website"/></div>
+    <div className="img-text-text"><span className="serif-header">Use responsiveness to give coaches the tools they need, when they need it.</span><br/>
+  We chose to create a responsive website that would allow coaches and students to allocate energy that felt appropriate to their environment. When coaches prepare for practices, this usually involves carefully reviewing past heat sheets, student records, and building off this data, which means this work typically isn’t completed on a mobile phone. However, we wanted to give coaches the opportunity to review any information around students that they might need refreshing while at the pool.</div>
+  </div>
+  <div className="img-text-box">
+  <div className="img-text-text"><span className="serif-header">Help empower students to voice their stress.</span><br/>
+  Initial feedback we got from our stress assessment was that it failed to account for students uncomfortable with disclosing personal information, as well as student who wouldn’t have a framework for assesing their own stress levels. Incorporating this feedback, we generated a survey that students could use to build into this. </div>
+    <div><img src={StressAssessmentGif} alt="preview of stress assessment" /></div>
+  </div>
+  <div className="img-text-box blue-grey">
+    <div><img src={Performance2} alt="Performance Management"/></div>
+    <div className="img-text-text"><span className="serif-header">Show the value of prioritizing life balance.</span><br/>
+    Beyond the student's journey balancing mental health and swimming practice, we wanted Statera to provide concrete value for coaches as well. The performance management tool communicates improvements within performance from increased attention to mental health, while also giving them powerful tools to analyze the team's strengths and weaknesses throughout the season.
+  </div>
+  </div>
+  <div className="center-content">
+  <div className="section-header">MY CONTRIBUTIONS TO STATERA</div><br/><br/>
+    <strong>About the project:  </strong>
+  My team was asked to build a responsive website for a problem within “youth sports” as part of a six week project in our Interaction Design Studio. It was our task to go into the field and identify pain points, generate solutions, and create a mid-to-hi-fi prototype of our website.<br/><br/>
+
+    <strong>My role:  </strong><br/>
+    <strong>Guerrilla and background research   </strong>- Took to the streets of Pittsburgh and asked people their experiences around youth sports.<br/><br/>
+
+    <strong>Research synthesis   </strong>- Led our team to use affinity diagramming to identify gaps in our domain knowledge.<br/><br/>
+
+    <strong>Ideation  </strong> - Tested storyboards with former student athlets to seek validation in our concepts.<br/><br/>
+
+    <strong>Solutioning  </strong> - developed wireframes and lo-fi prototypes for our Stress Assessment feature.
+
+  </div>
+
+  <div className="image-box blue-grey">
+  <Fade duration={3000}>
+  <div className="images">
+  <SimpleReactLightbox>
+  <SRLWrapper>
+  <a href={Scoreboard} data-attribute="SRL">
+    <img src={Scoreboard} alt="Scoreboard at Gateway High School pool"/>
+    </a>
+    <a href={JourneyMapping} data-attribute="SRL">
+    <img src={JourneyMapping} alt="My team plotting out our user journey maps"/>
+    </a>
+  </SRLWrapper>
+  </SimpleReactLightbox></div>
+  <div className="web-caption"><strong>Left:</strong> Scoreboard during a swim meet at Gateway High School. Doing observational studies allowed us to capture important data created during each heat, as well as see swimmer and coach behavior. <strong>Right:</strong> We used this information to help us map our customer and stakeholder journey maps.   </div>
+    <div className="mobile-caption"><strong>Top:</strong> Scoreboard during a swim meet at Gateway High School. Doing observational studies allowed us to capture important data created during each heat, as well as see swimmer and coach behavior. <strong>Bottom:</strong> We used this information to help us map our customer and stakeholder journey maps. </div>
+
+
+    </Fade>
+
+  </div>
+  <div className="center-content">
+  <div className="section-header"> FINDING THE RIGHT PROBLEM TO SOLVE</div><br/><br/>
+  Our team performed guerrilla research and interviewed Pittsburgh residents on their experiences around youth sports. We spoke to volunteer coaches, former student athletes, and parents during our research process. Across these groups, we uncovered a similar story in the student athlete experience: while athletes didn’t lose their passion towards sports, they felt too much pressure in balancing academics and athletics to continue pursuing it during their education.
+  </div>
+  <div className="quote-box serif-header blue-grey"><Fade duration={3000}><div className="quote">"My son had to drop swim team, but never stopped loving to swim"<br/>
+  -Mom of two swimmers</div></Fade>
+  </div>
+  <div className="center-content">
+As swimming happened to be the seasonal sport currently in progress in Pittsburgh, we chose to focus our research on the young swimmer’s experience. On our weekend, we hitched an Uber to the Pittsburgh suburbs to observe a Monroeville Marlins swim meet. It was early winter, but we were welcomed with a wave of humid air immediately after stepping into that gym.</div>
+<div className="center-content">
+<div className="section-header"> INSIGHTS</div><br/><br/>
+As our team performed interviews and observations, we’d come together to discuss what we did know and what gaps we had in our knowledge about the swim team experience. Through these conversations, we created journey maps that highlighted how coaches and swimmers (along with their parents) navigated through a week of practice and competitions.<br/><br/>
+
+Ultimately, we highlighted three critical insights that were important for what we chose to build a website solving:<br/><br/>
+<div className="insightSection">
+<div className="insight-group">
+<div className="insightNumber"><img src={DataFocus} alt="Performance Management"/><br/><span className="serif-label">Staying Focused</span></div>
+<div className="insight">Swim coaches spend their time during meets standing right by the edge of the pool. They are busy focusing on their students. Using a website during a meet would not only be dangerous, it would also distract them from their role as a coach.</div></div>
+<div className="insight-group">
+<div className="insightNumber"><img src={DowntimeIcon} alt="Performance Management"/><br/><span className="serif-label">Mindful Downtime</span></div>
+<div className="insight">The downtime during swim meets offers a lot of opportunity for swimmers to do school work, but the loudness of the gym and wanting to show support for your team can take away from that.</div>
+</div>
+<div className="insight-group">
+
+<div className="insightNumber"><img src={DataIcon} alt="Performance Management"/><br/><span className="serif-label">Capturing Data</span></div>
+<div className="insight">Swim meets generate a lot of useful data for coaches through heat sheets. This information is constantly being updated through the meet but could be giving coaches more value.</div></div>
+</div>
+</div>
+<div className="image-box blue-grey">
+<div className="section-header"> JOURNEY MAPPING</div><br/><br/>
+<Fade duration={3000}>
+
+<SimpleReactLightbox>
+<SRLWrapper>
+<a href={SwimmerJourneyMap} data-attribute="SRL">
+  <img src={SwimmerJourneyMapSmall} alt="Scoreboard at Gateway High School pool"/>
+  </a>
+  <a href={CoachJourneyMap} data-attribute="SRL">
+  <img src={CoachJourneyMapSmall} alt="My team plotting out our user journey maps"/>
+  </a>
+</SRLWrapper>
+</SimpleReactLightbox>
+  <div className="box-content">Our research from interviews and observations also helped us map out the journeys students and coaches undergo from practice to swim meets. Though swim meets are long and arduous for both stakeholders, we found it evident that so much of the impact for meets occurred during the lead up to them.</div>
+  </Fade>
+</div>
+<div className="center-content">
+<div className="section-header"> CONCEPT VALIDATION</div><br/><br/>
+After discussing our research as a team, we identified four main opportunity areas for building a website around. These included:<br/><br/>
+
+<div className="numbersection">
+<div className="number-row">
+<div className="insightNumbers">01.</div>
+<div className="number-text">Helping address student and parent concerns during swim meets.</div>
+<div className="insightNumbers">02.</div>
+<div className="number-text">Assist student athletes with balancing their school work with swimming to avoid burnout.</div>
+</div>
+<div class="number-row">
+<div className="insightNumbers">03.</div>
+<div className="number-text">Finding ways for parents to handle logistics of early morning swim meets.</div>
+<div className="insightNumbers">04.</div>
+<div className="number-text">Giving coaches tools to choose the right set of warmups and practice routines leading up to a meet.</div>
+</div>
 </div>
 
-<div className="content-photo-left">
-  <div className="col">
-    <h2>Challenge</h2>
-    <p>How might we allow players and coaches to talk about mental health in a competitive culture that encourages athletes to internalize stress management? </p>
-  </div>
+<br/><br/>
+
+We then mocked up storyboards around these opportunity statements, and speed dated them with parents and former swim athletes to get their feedback. From these, it seemed like the most extreme response came from addressing student burnout. Though it felt like the biggest challenge, our team was excited at tackling a space that could lead to more meaningful change within the current state of student-coach relationship dynamics.
 </div>
-<div className="content-photo-left">
-  <div className="col">
-    <h2>Guerilla Research</h2>
-    <p>After being assigned the domain of youth sports, my team went out into the field and interviewed Pittsburgh residents to get an idea of the landscape. We spoke to coaches, leaders of sports organizations, parents, and former athletes to understand some of the pain points that stakeholders within youth sports faced. As we began this project right as swim season was kicking off in Pittsburgh, and also after hearing some passionate stories from swim parents, we decided to focus on carving out a service within student swim teams. <br /><br />
-    After our first round of guerilla research, we convened as a group and shared the knowledge that we had. As we felt that the information we received was still insufficient. We mapped out what we did know, and then proceeded to identify the gaps in our knowledge. This helped us shape our second round of research so that we could ask critical questions regarding both the emotional needs as well as material realities of our stakeholders.<br /><br />
-    However, we quickly realized that relying exclusively on semi-structured interviews was giving us a limited picture of the environment in which swimmers played and the technology that was involved with both practices and meets. To improve our understanding, we headed to a local high school in Monroeville to attend a swim meet. Allowing ourselves to get immersed within the context of this event, experiencing the crowded, muggy, information-dense atmosphere of a swim meet, helped give perspective to some of the pain points our interviewees discussed in our interviews.
-</p>
-  </div>
+<div className="image-box blue-grey">
+<div className="section-header"> ARCHITECTURE AND WIREFRAMES</div><br/><br/>
+
+<div className="box-content">
+<span className="serif-header">Creating an architecture to support student-coach dialogue</span><br/>
+Statera is about creating conversations between students and coaches, and we needed our site architecture to reflect that. Our site flow has a different experienced based on these two users, but both flows are deeply intertwined. While the student experience is about communicating information to coaches, the coach experience centers around processing student athlete needs and how it affects their practices.
+  <div className="center-image"><SimpleReactLightbox>
+  <SRLWrapper>
+  <a href={Architecture} data-attribute="SRL">
+  <img src={Architecture} alt="Mapping out the Statera experience"/>
+  </a> </SRLWrapper>
+  </SimpleReactLightbox></div>
+
+</div>
+</div>
+<div className="image-box">
+<div className="box-content">
+<span className="serif-header">Paper Prototyping helped us spark alignment on design decisions</span><br/>
+Our team had to move quickly from generating site ideas to creating a solution. To help get our ideas out, we each sketched prototypes for our responsive site. This helped us have a conversation as to whether or not our flow made sense, and what content could be better suited for which device.<br/><br/>
+This exercise also helped us realize an important aspect of our design was missing. At this point, we only had scheduling, stress assessment, and messages as our core features. We realized that having a space for student athletes and coaches to process meet performance would be a useful repository for all swim meet metrics stored in heat sheets. In addition, this would help coaches study the relationship between student mental health and their swim performance.
+</div>
+<div className="image-grid">
+<img src={Wireframe3} alt="Mapping out the Statera experience"/>
+<img src={Wireframe1Small} alt="Mapping out the Statera experience"/>
+<img src={Wireframe2Small} alt="Mapping out the Statera experience"/>
+</div>
+
+<div className="image-grid">
+<img src={Wireframe4Small} alt="Mapping out the Statera experience"/>
+<img src={Wireframe5Small} alt="Mapping out the Statera experience"/>
+<img src={Wireframe6Small} alt="Mapping out the Statera experience"/>
+
+</div>
+</div>
 </div>
 
 <div className="center-content">
-    <h2>Customer Journey Maps</h2>
-
-          <img className="d-block w-100" src={Coach} alt="First slide" />
 
 
-          <img className="d-block w-100" src={Student} alt="Second slide" />
-
-
-
-</div>
-<div className="content-photo-left">
-  <div className="col">
-    <p>After we collected all of this information, we found it necessary to streamline our observations, interviews, and artifacts into something more universal to the swimming experience. We carved out journey maps for both the swim coaches as well as the parent and student. To begin, we wrote down all of the data we had on post-it notes and then placed them onto a white board to identify the sequence of events as well as the emotional and mental dialogue with those steps in the process. Through this map, we allowed ourselves to think both about the practices and period leading up to a meet, as well as the meet itself. While this might have been a little more zoomed-out than normal, we wanted to keep an open mind about when was the best step for identifying a problem that demanded an intervention. Through the journey map, we were able to come across a set of general problems that could use addressing through a responsive website. These were:</p>
-    <ol>
-    <li>Swim meets were long events that required being attentive despite massive amounts of downtime.</li>
-    <li>Fast paced nature of individual heats made it difficult for coaches to communicate with athletes during the actual meets.</li>
-    <li>The amount of time involved for students to practice and participate in swim team could interfere with their academic performance and lead them to drop out.</li>
-    </ol>
-    </div>
-</div>
-
-<div className="content-photo-left">
-<div className="col">
-<h2>Speed Dating and Storyboarding</h2>
-By identifying these problem areas, we were able to carve out more specific ideas on how to address these needs. As a group, we drafted storyboards that proposed possible solutions and we shared them to figure out whether or not they adequately addressed a need. Some of these solutions included:<br /><br />
-
-	INSERT STORYBOARDS HERE<br /><br />
-
-Through these interviews, we found that the need for being able to catch your child’s swim meet had a generally positive response, but we found the most visceral response came from the need to communicate your emotional health with your coach. One iterviewee, a former swimmer herself, stated that talking about these issues with a coach was just something you never did. That the atmosphere of a swim team made this almost taboo. The near discomfort at even the thought of discussing these issues with a coach, tied in with the recurring story we heard from parents that their children quit when the workload of swim team became too much for them to bear, made us realize there was value in exploring this need.
-</div>
-</div><br />
-
-<div className="content-photo-left">
-  <div className="col">
-      <h2>Wireframes</h2>
-      <p>One of the biggest challenges after identifying the solution we wanted to develop was creating a logical flow of information through the app. We identified that there would be two experiences for users: one that served coaches and then another that served students. Both experiences would have to be built intertwined, ensuring that the data students entered into the app would be effectively communicated to coaches. For each component of this app, we needed to make sure that there was a way to drive home value by incorporating mental health within practice strategies. To do this, we created three components for our app:<br /><br />
-      <ol>
-<li>Schedule</li>
-<li>Stress Evaluation</li>
-<li>Performance </li>
-</ol>
-In addition, we suggested a messaging platform within the app to help coaches and students resolve any administrative or urgent issues.
-
-After establishing the necessary information architecture of the website, another challenge we faced within this wireframe stage was creating meaningful data visualizations. We needed to make sure that the appropriate information was communicated to the right parties, and that graphs could be processed at different resolutions, for different environments, and people with different learning capabilities. Considering this immense amount of use cases, we supplemented the graphs with generated summaries. This allowed coaches to get concise information about their students with a quick glance.
-</p>
-</div></div>
-<div className="content-photo-left">
-
-  <div className="col">
-  <h2>Mid-to-High Fidelity Prototypes</h2>
-    <p>For our visual design, we chose a look that played around with both brutalist design but also softer color pallets. The result was something similar to a blueprint map, which emphasized the utilitarian nature of the application as a tool for coaches. </p>
-
-    <img src={StudentStress} alt="student stress iphone screen" />
-    <img src={CoachStress} alt="coach stress iphone screen" />
   </div>
-</div>
 
-<div className="content-photo-left">
-<div className="col">
-<h2>Reflection</h2>
+  <div className="image-box blue-grey">
+  <div className="section-header">ROADMAP</div><br/><br/>
+  <div className="box-content">
+  <span className="serif-header">Allowing for anonymity</span><br/>
+  Dialogues around stress and workload are still taboo subjects for student athletes, and the fear of repercussions to vocalize these issues can still deter students from using the app. Future designs would explore how anonymity could be meaningfully used to transform coach attitudes and encourage students to opt-in and use the app.<br/><br/>
 
-<p>We took a big risk with addressing this particular need, but I’m pleased with the overall product. There are a lot of issues with navigating mental health within a school application for teens, and there are gaps within this iteration that we need to work on resolving. Namely, creating tools for anonymity as well as ensuring for debiasing tools will be essential for a subsequent iteration. Another issue that we’ll need to work on is ensuring that the app helps decrease stress on students rather than increase it. We were more focused this round on providing value for the coach that we failed to take into account the ways that reminding students of their stress could create a negative feedback loop.</p></div></div>
+  <span className="serif-header">Smart planning for coaches</span><br/>
+  Statera gives coaches a lot of data that can help them make meaningful decisions for practices and swim meets, but it could be overwhelming to the novice user. We'd like to incorporate machine learning that could provide actionable recommendations for coaches with workout planning, meet assignments, and practice regimens.
+  </div>
 
-</div>
-</div>
+  </div>
+  </div>
 <Footer />
 </div>
 )

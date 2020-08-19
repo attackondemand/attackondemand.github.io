@@ -1,6 +1,6 @@
 import React from "react"
 import Nav from "../components/Navbar"
-import Banner from "../components/Banner"
+import Banner from "../components/Banner-copy"
 import Footer from "../components/Footer"
 
 import DyatlovBanner from "../assets/dyatlov-banner.png"

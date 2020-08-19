@@ -13,6 +13,7 @@ function Thumbnail(props) {
         </div>
         <div className="project-card">
           <div className="project-title">{props.title}</div>
+          <div className="project-subhead">{props.subhead}</div>
           <div className="project-category">{props.category}</div>
         </div>
       </Link>

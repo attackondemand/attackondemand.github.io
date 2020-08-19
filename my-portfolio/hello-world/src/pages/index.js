@@ -8,13 +8,14 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Helmet } from "react-helmet"
 
 import StateraThumb from "../assets/statera-v2.png"
-import HomeBanner from "../assets/homebanner.jpg"
+import HomeBanner from "../assets/homebanner.png"
 import HomeBanner2 from "../assets/homebanner2.jpg"
-import HomeBanner3 from "../assets/homebanner3.jpg"
+import HomeBanner3 from "../assets/medotme.png"
 
 import UCREThumb from "../assets/ucre-v2.png"
+import NanaThumb from "../assets/NanaWallThumb.png"
 import PUIThumb from "../assets/pui-thumb.png"
-import HondaThumb from "../assets/hondathumb.png"
+import HondaThumb from "../assets/hondathumb2.png"
 import favicon from "../assets/favicon.png"
 
 import { motion } from "framer-motion"
@@ -29,44 +30,53 @@ export default () => (
 
   </Helmet>
     <Nav />
+    <Fade duration={2000}>
+
     <Banner
-      image={HomeBanner3}
-      color="#441A36"
+      image={HomeBanner}
+      color="#9dadbc"
       title="Access Granted."
+      description="I'm Michael. I'm a Pittsburgh-based product designer. I thrive on understanding people's stories and creating experiences around their needs."
     />
+    </Fade>
     <Fade duration={3000}>
     <div id="projects">
 
-      <Thumbnail
-        link="/dyatlovpass"
-        image={PUIThumb}
-        alt="Dyatlov Pass Thumbnail"
-        title="Dyatlov Pass"
-        category="Interactive Storytelling"
-      />
+    <Thumbnail
+      link="/statera"
+      image={StateraThumb}
+      alt="Statera Thumbnail"
+      title="Statera"
+      subhead="Helping student athletes communicate stress to coaches and reduce burnout"
+      category="Responsive Web Design"
+    />
 
-      <Thumbnail
-        link="/artcircuit"
-        image={UCREThumb}
-        alt="Art Circuit Thumbnail"
-        title="Art + Human Circuit"
-        category="User Research"
-      />
-      <Thumbnail
-        link="/statera"
-        image={StateraThumb}
-        alt="Statera Thumbnail"
-        title="Statera"
-        category="Responsive Web Design"
-      />
+    <Thumbnail
+      link="/artcircuit"
+      image={UCREThumb}
+      alt="Art Circuit Thumbnail"
+      title="Art + Human Circuit"
+      subhead="Bringing communities together to play and engage with art through IoT solutions."
+      category="User Research"
+    />
+    <Thumbnail
+      link="/nanawall"
+      image={NanaThumb}
+      alt="Nanawall Thumbnail"
+      title="Nanawall AR"
+      subhead="Using augmented reality to shorten product selection times."
+      category="Native App"
+    />
+    <Thumbnail
+      link="/honda"
+      image={HondaThumb}
+      alt="Honda Thumbnail"
+      title="Salmon"
+      subhead="A research synthesis tool for design thinkers and user researchers."
+      category="Capstone Project"
+    />
 
-      <Thumbnail
-        link="https://mhci-honda-capstone.netlify.com"
-        image={HondaThumb}
-        alt="Statera Thumbnail"
-        title="Honda Project"
-        category="MHCI Capstone Project"
-      />
+
     </div>
     </Fade>
     <Footer />

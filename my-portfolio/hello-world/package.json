@@ -28,7 +28,9 @@
     "react-helmet": "^5.2.1",
     "react-pdf": "^4.1.0",
     "react-pdf-js": "^5.1.0",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "simple-react-lightbox": "^3.1.1",
+    "simplelightbox": "^2.2.1"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
