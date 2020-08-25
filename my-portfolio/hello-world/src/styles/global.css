@@ -159,6 +159,28 @@ nav{
   font-size: 3em;
   padding-bottom: 2%;
 }
+.button-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  border-radius: 3em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  width: auto;
+}
+.cta-button {
+  background-color: #FFD4C8;
+  color: #333 !important;
+}
+
+.cta-button:hover {
+  background-color: #FF8A00;
+}
 .banner-title h3{
 
 

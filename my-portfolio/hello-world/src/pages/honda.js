@@ -53,6 +53,9 @@ export default ()=> (
   <div className="serif-header">Streamline researcher workflows to help them focus on crafting user-driven insights.</div>
   Salmon is a research synthesis tool for design thinkers and user researchers that connects annotation, synthesis, and delivery of findings in the research process to help professionals and students focus on the work they're passionate about.
   </div>
+  <div class="button-wrapper">
+    <a class="button cta-button" href="http://cmu-pitt-crew.webflow.io/" target="_blank">Product Website</a>
+  </div>
   </div>
   </div>
 
