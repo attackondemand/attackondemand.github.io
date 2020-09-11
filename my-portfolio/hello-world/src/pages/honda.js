@@ -35,6 +35,7 @@ export default ()=> (
     image={HondaBanner}
     color="#FFD4C8"
     title="Salmon"
+    sponsor='Sponsor: Honda R&D Americas'
     description= 'Creating tools to push forward Design Thinking and innovation'
     team="Team: Margot Henderson, Matt Franklin, Haley Park, Caitlin Coyiuto"
     role="Role: Product Designer"

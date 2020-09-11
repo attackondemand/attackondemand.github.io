@@ -13,6 +13,7 @@ export default (props)=> (
       <div className={`banner-description ${props.mode} ${props.description ? '' : 'hidden'}`}>
       <h3>{props.description}</h3><br />
       <div className={`${props.team ? '' : 'hidden'}`}>
+      <span className={`${props.sponsor ? '' : 'hidden'}`}>{props.sponsor}</span><br />
       {props.role}<br />
       {props.team}<br />
       {props.projectLength}<br />
