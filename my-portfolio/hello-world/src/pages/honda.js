@@ -47,9 +47,9 @@ export default ()=> (
   <div id="outercontainer">
   <Helmet>
     <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Creating tools to push forward Design Thinking and innovation." />
+    <meta name="description" content="Salmon Case Study | Creating tools to push forward Design Thinking and innovation." />
     <meta property="og:image" content={HondaBanner} />
-    <title>Michael Silvestre</title>
+    <title>Michael Silvestre | Product Designer</title>
     <link rel="canonical" href="http://msilvestre.xyz" />
     <link rel="icon" href={favicon} />
 
