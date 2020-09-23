@@ -10,6 +10,12 @@ module.exports = {
       siteUrl: 'http://msilvestre.xyz'
 },
 
-  plugins: [`gatsby-plugin-react-helmet`, 'gatsby-plugin-cname']
+  plugins: [`gatsby-plugin-react-helmet`, 'gatsby-plugin-cname', {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-40558316-2",
+      },
+    },]
 
 }

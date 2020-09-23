@@ -43,6 +43,15 @@ export default () => (
     <div id="projects">
 
     <Thumbnail
+      link="/honda"
+      image={HondaThumb}
+      alt="Honda Thumbnail"
+      title="Salmon"
+      subhead="A research synthesis tool for design thinkers and user researchers."
+      category="Capstone Project"
+    />
+
+    <Thumbnail
       link="/statera"
       image={StateraThumb}
       alt="Statera Thumbnail"
@@ -67,14 +76,7 @@ export default () => (
       subhead="Using augmented reality to shorten product selection times."
       category="Native App"
     />
-    <Thumbnail
-      link="/honda"
-      image={HondaThumb}
-      alt="Honda Thumbnail"
-      title="Salmon"
-      subhead="A research synthesis tool for design thinkers and user researchers."
-      category="Capstone Project"
-    />
+
 
 
     </div>
