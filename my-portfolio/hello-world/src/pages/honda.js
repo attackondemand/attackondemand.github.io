@@ -39,6 +39,7 @@ import SalmonColors from "../assets/salmon-colors.png"
 import SalmonFonts from "../assets/salmon-fonts.png"
 import ReactTest from "../assets/react-testing.png"
 import Roadmap from "../assets/salmon-roadmap.png"
+import StakeholerMap from "../assets/salmon-stakeholder-map.png"
 
 import favicon from "../assets/favicon.png"
 
@@ -81,7 +82,7 @@ export default ()=> (
   </div>
 
   <div className="center-content">
-  <div className="section-header">DESIGN DECISIONS</div><br/><br/>
+  <div className="section-header">DESIGN OVERVIEW</div><br/><br/>
   <div className="serif-header">Salmon helps researchers carry evidence through three phases of their research process.</div>
   </div>
   <div className="salmon-journey">
@@ -126,7 +127,11 @@ Evidence created from Salmon’s annotation phase populates directly into Salmon
   <div className="section-header">DISCOVERY</div><br/><br/>
   <div className="box-content">
   <span className="serif-header">Using Design Thinking to build Design Thinking tools</span><br/>
-Honda R&D came to my team with the challenge to build an intelligent platform for learning design thinking. As budding designers within UX, this was a very meta experience. We had to design a research plan that allowed us to go into the field but also step back and reflect on our own challenges learning these methods. With a problem space that was so close to our own education, we had to approach the statement "You are not the user" with a bit more ambiguity. <br/> <br/>
+With the rise of electric and autonomous vehicles, the landscape for the automotive industry is rapidly changing. This means that even the biggest companies have to think creatively and innovatively about the work they're doing. To promote innovation, Honda has established a series of initiatives and orgs throughout their company to establish design thinking methodologies in their research. <br/> <br/>As a means of supporting these internal organizations, Honda R&D came to my team with the challenge to build an intelligent platform for learning design thinking. At the core of this challenge, our team was contracted to help their sponsorship with OnRamp, an externship program at Ohio State University where undergrad students use design thinking to research and idenitfy potential opportunity areas within a variety of problem spaces. <br/><br/>
+As budding designers within UX, this was a very meta experience. We had to design a research plan that allowed us to go into the field but also step back and reflect on our own challenges learning these methods. With a problem space that was so close to our own education, we had to approach the statement "You are not the user" with a bit more ambiguity. <br/> <br/>
+<div className="gridRow">
+<img className="stakeholder" src={StakeholerMap} alt="responsive website"/><br/> <br/>
+</div>
 <strong>To find out how we could best create value within our problem space, we established three goals in our research:</strong><br/><br/>
 
 <strong>1)</strong> Define the scope of our target users and determine which stakeholders had similar pain points<br/><br/>
@@ -180,19 +185,19 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
     <div className="gridRow">
     <div className="gridUnit">
-    <img src={Ben} />
+    <img className="persona" src={Ben} />
     <span className="serif-header">Ben</span>
     <strong>Fundamentals Instructor</strong>
   "I want to teach employees about Design Thinking to help them center their research around the customer."
     </div>
     <div className="gridUnit">
-    <img src={Megan} />
+    <img className="persona" src={Megan} />
     <span className="serif-header">Megan</span>
     <strong>Practitioner Training</strong>
   "Design Thinking takes practice. I want to help people use these methods with confidence."
     </div>
     <div className="gridUnit">
-    <img src={Sarah} />
+    <img className="persona" src={Sarah} />
     <span className="serif-header">Sarah</span>
     <strong>Think Tank Facilitator</strong>
     "When teams are struggling with building their research, I want to work with them to break from the mold."
@@ -209,13 +214,13 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
       <div className="gridRow">
       <div className="gridUnit">
-      <img src={Erica} />
+      <img className="persona" src={Erica} />
       <span className="serif-header">Erica</span>
       <strong>OnRamp Participant</strong>
     "I want to get involved in something new and exciting, but I also want to create work that makes me proud."
       </div>
       <div className="gridUnit">
-      <img src={Steven} />
+      <img className="persona" src={Steven} />
       <span className="serif-header">Steven</span>
       <strong>Materials Engineer</strong>
     "I know my team has the talent to do cutting-edge work. We just need some help thinking outside the box."
@@ -296,8 +301,7 @@ From our insights, our team led a co-design session with our clients at Honda R&
           <div className="section-header">PROTOTYPING</div><br/><br/>
 
           <span className="serif-header">Iterative design and research allowed us to turn our sketches into two meaningful prototypes.</span>
-  From our insights, our team led a co-design session with our clients at Honda R&D Americas to determine which opportunities would be best to solve. Through this workshop, we aimed at targeting how improving the  understandability of research across teams and the ability to assess the credibility of research would be the most promising avenues for reframing our project. From these two problem areas, we used speed dating to identify which needs would create the most value for our stakeholders.
-
+After testing these initial sketches of each experience, my team came together and highlighted commonalities with the concepts as well as functionality that resonated with our interview participants. This exercise helped us narrow down our selection and create two further developed prototypes.
       <div className="gridRow">
       <img src={EvidenceTracker} />
       <div className="gridUnit">
