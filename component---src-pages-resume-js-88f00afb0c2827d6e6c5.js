@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{F2CN:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),r=t.n(n),c=t("U5tq"),s=t("JwsL"),l=t("Wbzz");a.default=function(){return r.a.createElement("div",{id:"outercontainer"},r.a.createElement(c.a,null),r.a.createElement("div",{className:"resume-link"},r.a.createElement("a",{href:Object(l.b)("/Resume11-20.pdf")},r.a.createElement("img",{className:"resume",src:"/Resume11-20.jpg"}))),r.a.createElement(s.a,null))}}}]);
-//# sourceMappingURL=component---src-pages-resume-js-88f00afb0c2827d6e6c5.js.map
