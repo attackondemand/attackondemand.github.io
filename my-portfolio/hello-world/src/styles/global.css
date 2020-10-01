@@ -1,9 +1,12 @@
+@import url('https://use.typekit.net/iqa5cmv.css');
+
 html{
   /* background-color: #E6EDD3; */
   background-color: #fff;
   /* font-family: GangsterGrotesk !important; */
   font-family: freight-sans-pro, sans-serif;
-
+font-weight: 400;
+font-style: normal;
   /* font-family: franklin-gothic, sans-serif; */
 
   /* font-family: ff-meta-web-pro, sans-serif; */
@@ -14,6 +17,11 @@ font-weight: 100; */
   /* font-weight: 400; */
 }
 
+body{
+  font-family: freight-sans-pro, sans-serif !important;
+font-weight: 400;
+font-style: normal;
+}
 strong{
   font-family: freight-sans-pro, sans-serif;
 
@@ -189,7 +197,7 @@ nav{
   font-weight: 500;
 
   font-style: normal;
-
+  font-size: 1.3em;
   /* font-family: ff-meta-correspondence-web-p, sans-serif;
   font-style: normal;
   font-weight: 400; */
@@ -429,7 +437,7 @@ img{
 }
 
 .section-header{
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-align: center;
   padding-top: 1%;
 }
@@ -447,7 +455,8 @@ img{
 }
 
 .persona{
-  max-width: 180px;
+  max-width: 400px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .screen-images{
@@ -498,11 +507,12 @@ justify-content: center;
 .quotebox{
   background-color: #FFF1ED;
   border-radius: 10px;
-  width: 500px;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 170px;
   justify-content: space-around;
 }
 .section-image img{
@@ -572,6 +582,7 @@ justify-content: center;
       width: 50%;
       padding: 5%;
     }
+
     .banner-title{
       display: flex;
       max-width: 40%;
@@ -722,9 +733,7 @@ margin: auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.p-5{
-  padding: 5px;
-}
+
 
 .projectInstance:hover .project-card{
   visibility: visible;
@@ -743,5 +752,19 @@ margin: auto;
 .section-image img{
     width: 100% !important;
 }
+.quotebox{
+  background-color: #FFF1ED;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 170px;
+  justify-content: space-around;
+}
+.pad-5{
+  padding: 3rem;
+}
+
 
 }

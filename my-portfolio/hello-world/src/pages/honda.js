@@ -4,6 +4,7 @@ import Banner from "../components/Banner-copy"
 import Footer from "../components/Footer"
 import Fade from "react-reveal/Fade"
 import { Helmet } from "react-helmet"
+import { SRLWrapper } from "simple-react-lightbox";
 
 import Tiles from "../assets/tiles.png"
 import PosterSession from "../assets/postersession.png"
@@ -20,11 +21,18 @@ import StoryboardIcon from "../assets/storyboard-icon.png"
 import SemiStructureIcon from "../assets/semi-structured-icon.png"
 import CompIcon from "../assets/comp-analysis-icon.png"
 import LitReviewIcon from "../assets/lit-review-icon.png"
-import Sarah from "../assets/sarah-persona.png"
+import SarahFullPersona from "../assets/sarah-full-persona.png"
+import BenFullPersona from "../assets/ben-full-persona.png"
+import MeganFullPersona from "../assets/megan-full-persona.png"
+import StevenFullPersona from "../assets/steven-full-persona.png"
+import EricaFullPersona from "../assets/erica-full-persona.png"
 import Ben from "../assets/ben-persona.png"
 import Megan from "../assets/megan-persona.png"
+import Sarah from "../assets/sarah-persona.png"
 import Steven from "../assets/steven-persona.png"
 import Erica from "../assets/erica-persona.png"
+
+
 import EvidenceTracker from "../assets/evidence-tracker.png"
 import ResearchPocket from "../assets/research-pocket.png"
 import Moscow1 from "../assets/moscow-1.png"
@@ -60,7 +68,7 @@ export default ()=> (
     image={HondaBanner}
     color="#FFD4C8"
     title="Salmon"
-    sponsor='Sponsor: Honda R&D Americas'
+    sponsor='Client: Honda R&D Americas'
     description= 'Creating tools to push forward Design Thinking and innovation'
     team="Team: Margot Henderson, Matt Franklin, Haley Park, Caitlin Coyiuto"
     role="Role: Product Designer"
@@ -80,7 +88,21 @@ export default ()=> (
   <div className="serif-header">Streamline researcher workflows to help them focus on crafting user-driven insights.</div>
   Salmon is a research synthesis tool for design thinkers and user researchers that connects annotation, synthesis, and delivery of findings in the research process to help professionals and students focus on the work they're passionate about.
   </div>
+  <div className="center-content">
+  <div className="section-header"> MY CONTRIBUTIONS TO SALMON</div><br/><br/>
+    <strong>About the project:</strong><br/>
+      As part of my capstone team’s collaboration with Honda R&D Americas, we were asked to build an intelligent tool to help with learning Design Thinking. This was an eight month, end-to-end project from generative research out in the field to designing and testing hi-fidelity prototypes with stakeholders.<br/><br/>
 
+      <strong>My role: </strong><br/>
+      <strong>Team communications:</strong> I led content generation for our team’s Medium blog, as well as generating weekly reports for our client to keep them involved within our design process.<br/><br/>
+
+      <strong>Testing lead:</strong> I created testing protocols through our design phase of the project to help us validate concepts and understand user behavior through our prototypes.<br/><br/>
+
+      <strong>Design research:</strong> To better understand which stakeholders and pain points to leverage, I led generation of design artifacts within the team including creation of user personas and customer journey maps.
+
+      <strong>Product strategy:</strong> I helped drive product scope and strategy by undertaking a competitive analysis of the field, scoping our MVP through feature prioritization techniques, and designed a roadmap for future iterations of Salmon.
+
+    </div>
   <div className="center-content">
   <div className="section-header">DESIGN OVERVIEW</div><br/><br/>
   <div className="serif-header">Salmon helps researchers carry evidence through three phases of their research process.</div>
@@ -90,8 +112,8 @@ export default ()=> (
   </div>
   <div className="img-text-box salmon">
     <div><img className="screen-images" src={Annotate} alt="responsive website"/></div>
-    <div className="img-text-text"><span className="serif-header">Create an annotations that make organizing evidence simple.</span><br/>
-  We chose to create a responsive website that would allow coaches and students to allocate energy that felt appropriate to their environment. When coaches prepare for practices, this usually involves carefully reviewing past heat sheets, student records, and building off this data, which means this work typically isn’t completed on a mobile phone. However, we wanted to give coaches the opportunity to review any information around students that they might need refreshing while at the pool.</div>
+    <div className="img-text-text"><span className="serif-header">Create annotations that make organizing evidence simple.</span><br/>
+  Researchers can upload interview transcripts, pdf files, and documents and highlight important quotes that they want to carry over into synthesis. The annotation phase in Salmon populates evidence into the right sidebar where they can then add and create tags to do preliminary organization. </div>
   </div>
   <div className="img-text-box">
     <div className="img-text-text"><span className="serif-header">Stay aligned while synthesizing research no matter where you are.</span><br/>
@@ -110,20 +132,8 @@ Evidence created from Salmon’s annotation phase populates directly into Salmon
 
 </div>
     </div>
-  <div className="center-content">
 
-  <div className="section-header"> MY CONTRIBUTIONS TO SALMON</div><br/><br/>
-    <strong>About the project:</strong><br/>
-      As part of my capstone team’s collaboration with Honda R&D Americas, we were asked to build an intelligent tool to help with learning Design Thinking. This was an eight month, end-to-end project from generative research out in the field to designing and testing hi-fidelity prototypes with stakeholders.<br/><br/>
-
-      <strong>My role: </strong><br/>
-      <strong>Team communications:</strong> I led content generation for our team’s Medium blog, as well as generating weekly reports for our client to keep them involved within our design process.<br/><br/>
-
-      <strong>Testing Lead:</strong> I created testing protocols through our design phase of the project to help us validate concepts and understand user behavior through our prototypes.<br/><br/>
-
-      <strong>Design research:</strong> To better understand which stakeholders and pain points to leverage, I led generation of design artifacts within the team including creation of user personas and customer journey maps.
-    </div>
-<div className="image-box salmon">
+<div className="image-box">
   <div className="section-header">DISCOVERY</div><br/><br/>
   <div className="box-content">
   <span className="serif-header">Using Design Thinking to build Design Thinking tools</span><br/>
@@ -185,25 +195,17 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
     <div className="gridRow">
     <div className="gridUnit">
-    <img className="persona" src={Ben} />
-    <span className="serif-header">Ben</span>
-    <strong>Fundamentals Instructor</strong>
-  "I want to teach employees about Design Thinking to help them center their research around the customer."
+    <img className="persona" src={BenFullPersona} alt="Snow" />
     </div>
     <div className="gridUnit">
-    <img className="persona" src={Megan} />
-    <span className="serif-header">Megan</span>
-    <strong>Practitioner Training</strong>
-  "Design Thinking takes practice. I want to help people use these methods with confidence."
+    <img className="persona" src={MeganFullPersona} />
     </div>
     <div className="gridUnit">
-    <img className="persona" src={Sarah} />
-    <span className="serif-header">Sarah</span>
-    <strong>Think Tank Facilitator</strong>
-    "When teams are struggling with building their research, I want to work with them to break from the mold."
+    <img className="persona" src={SarahFullPersona} />
     </div>
+
       </div>
-      </div>
+    </div>
 
       <div className="center-content">
       <span className="serif-header">Student Personas</span>
@@ -214,16 +216,10 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
       <div className="gridRow">
       <div className="gridUnit">
-      <img className="persona" src={Erica} />
-      <span className="serif-header">Erica</span>
-      <strong>OnRamp Participant</strong>
-    "I want to get involved in something new and exciting, but I also want to create work that makes me proud."
+      <img className="persona" src={EricaFullPersona} />
       </div>
       <div className="gridUnit">
-      <img className="persona" src={Steven} />
-      <span className="serif-header">Steven</span>
-      <strong>Materials Engineer</strong>
-    "I know my team has the talent to do cutting-edge work. We just need some help thinking outside the box."
+      <img className="persona" src={StevenFullPersona} />
       </div>
         </div>
         </div>
@@ -410,7 +406,7 @@ Overall, Salmon was met with widespread acclaim? In addition to capturing a real
   </div>
 
   <div className="gridRow">
-  <div className="gridUnit p-5">
+  <div className="gridUnit pad-5">
   <span className="serif-header"> On usability </span>
   <div className="quotebox">
   <img src={Megan} />
@@ -424,7 +420,7 @@ So there's no added friction there. But the benefit of this is perhaps we don't 
 
 
   </div>
-  <div className="gridUnit p-5">
+  <div className="gridUnit pad-5">
   <span className="serif-header">Evaluating biases</span>
 
   <div className="quotebox">
@@ -439,7 +435,7 @@ So there's no added friction there. But the benefit of this is perhaps we don't 
   </div>
 
   <div className="gridRow">
-      <div className="gridUnit p-5">
+      <div className="gridUnit pad-5">
       <span className="serif-header">Simplifying workflows</span>
       <div className="quotebox">
           <img src={Erica} />
@@ -451,7 +447,7 @@ So there's no added friction there. But the benefit of this is perhaps we don't 
       </div>
       </div>
 
-      <div className="gridUnit p-5">
+      <div className="gridUnit pad-5">
       <span className="serif-header">Desire to use</span>
       <div className="quotebox">
           <img src={Erica} />

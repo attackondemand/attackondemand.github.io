@@ -12,7 +12,7 @@ import ExperiencePrototype from "../assets/experience-prototype.png"
 import ThinkAloud from "../assets/thinkaloud.png"
 import KatzEyes from "../assets/katz-image.png"
 import Magnolias from "../assets/mags-image.png"
-import ArtCircuitBanner from "../assets/ucre-banner2.png"
+import ArtCircuitBanner from "../assets/ucre-banner3.png"
 import CrazyEight from "../assets/crazyeight.png"
 import SpeedDating from "../assets/speeddating-me.jpg"
 import NorthShore from "../assets/northshore-playground.jpg"
@@ -33,7 +33,7 @@ export default ()=> (
   <Fade duration={3000}>
   <Banner
     image={ArtCircuitBanner}
-    color="black"
+    color="#5D536B"
     title="Art + Human Circuit"
     description= 'Bringing communities together to play and engage with art through IoT solutions.'
     team="Team: Amy Lu, Katie McTigue, Matthew Fang, Rissa Lee"
