@@ -2,9 +2,11 @@ import React from "react"
 import Nav from "../components/Navbar"
 import Banner from "../components/Banner-copy"
 import Footer from "../components/Footer"
+import Image from "../components/Image"
 import Fade from "react-reveal/Fade"
 import { Helmet } from "react-helmet"
 import { SRLWrapper } from "simple-react-lightbox";
+
 
 import Tiles from "../assets/tiles.png"
 import PosterSession from "../assets/postersession.png"
@@ -82,11 +84,11 @@ export default ()=> (
 
   <div className="section-header"> THE CLIFF'S NOTES</div><br/><br/>
   <strong>Problem</strong>
-  <div className="serif-header">Evidence and observations collected during user research are lost in a stream of tools that make it challenging to utilize while synthesizing findings. </div><br/><br/>
+  <div className="serif-header">Evidence and observations collected during user research are lost in a stream of tools that make them challenging to synthesize into powerful insights. </div><br/><br/>
 
   <strong>Solution</strong><br/>
   <div className="serif-header">Streamline researcher workflows to help them focus on crafting user-driven insights.</div>
-  Salmon is a research synthesis tool for design thinkers and user researchers that connects annotation, synthesis, and delivery of findings in the research process to help professionals and students focus on the work they're passionate about.
+  Salmon is a research synthesis tool for design thinkers and user researchers that connects annotation, synthesis, and delivery of findings in the research process to help professionals and students identify opportunities and create compelling research.
   </div>
   <div className="center-content">
   <div className="section-header"> MY CONTRIBUTIONS TO SALMON</div><br/><br/>
@@ -94,11 +96,11 @@ export default ()=> (
       As part of my capstone team’s collaboration with Honda R&D Americas, we were asked to build an intelligent tool to help with learning Design Thinking. This was an eight month, end-to-end project from generative research out in the field to designing and testing hi-fidelity prototypes with stakeholders.<br/><br/>
 
       <strong>My role: </strong><br/>
-      <strong>Team communications:</strong> I led content generation for our team’s Medium blog, as well as generating weekly reports for our client to keep them involved within our design process.<br/><br/>
+      <strong>Team communications:</strong> I led content generation for our team’s Medium blog, designed our product website,and crafted weekly reports for our client to keep them involved within our design process.<br/><br/>
 
-      <strong>Testing lead:</strong> I created testing protocols through our design phase of the project to help us validate concepts and understand user behavior through our prototypes.<br/><br/>
+      <strong>Testing lead:</strong> I created testing protocols during our design phase of the project to help us validate concepts, user flows, and better understand user behavior through our prototypes.<br/><br/>
 
-      <strong>Design research:</strong> To better understand which stakeholders and pain points to leverage, I led generation of design artifacts within the team including creation of user personas and customer journey maps.
+      <strong>Design research:</strong> I oversaw the development of design artifacts, including creation of user personas and customer journey maps, to our team and our client better understand our users.
 
       <strong>Product strategy:</strong> I helped drive product scope and strategy by undertaking a competitive analysis of the field, scoping our MVP through feature prioritization techniques, and designed a roadmap for future iterations of Salmon.
 
@@ -111,7 +113,9 @@ export default ()=> (
   <img src={SalmonJourney} />
   </div>
   <div className="img-text-box salmon">
-    <div><img className="screen-images" src={Annotate} alt="responsive website"/></div>
+    <div>
+        <Image img={Annotate} className="screen-images"></Image>
+    </div>
     <div className="img-text-text"><span className="serif-header">Create annotations that make organizing evidence simple.</span><br/>
   Researchers can upload interview transcripts, pdf files, and documents and highlight important quotes that they want to carry over into synthesis. The annotation phase in Salmon populates evidence into the right sidebar where they can then add and create tags to do preliminary organization. </div>
   </div>
@@ -120,15 +124,15 @@ export default ()=> (
 Evidence created from Salmon’s annotation phase populates directly into Salmon’s synthesis board, including contextual information to help teams synthesize research both together or asynchronously. Commenting features allows teammates to resolve disagreements around tagging if they can’t connect in person.
     </div>
 
-    <div><img className="screen-images" src={Synthesize} alt="responsive website"/></div>
+    <div><Image img={Synthesize} className="screen-images"></Image></div>
     </div>
     <div className="img-text-box salmon">
-      <div><img className="screen-images" src={Deliver} alt="responsive website"/></div>
+      <div><Image img={Deliver} className="screen-images"></Image></div>
       <div className="img-text-text"><span className="serif-header">Generate empathy and credibility while delivering findings.</span><br/>
       When you’re ready to share findings with people outside of your team, Salmon centers your evidence and findings in the delivery process. Clusters created within Salmon’s synthesis phase are populated into the sidebar and allow you to drag and drop evidence straight into your reports or presentations.
       <br/><br/>
 
-  Evidence within the delivery tool also allows you to go downstream and review evidence, participant pools, and synthesis with those outside audiences.
+  The delivery phase also allows you to go downstream and review evidence, participant pools, and synthesis boards with those outside audiences as well.
 
 </div>
     </div>
@@ -137,10 +141,10 @@ Evidence created from Salmon’s annotation phase populates directly into Salmon
   <div className="section-header">DISCOVERY</div><br/><br/>
   <div className="box-content">
   <span className="serif-header">Using Design Thinking to build Design Thinking tools</span><br/>
-With the rise of electric and autonomous vehicles, the landscape for the automotive industry is rapidly changing. This means that even the biggest companies have to think creatively and innovatively about the work they're doing. To promote innovation, Honda has established a series of initiatives and orgs throughout their company to establish design thinking methodologies in their research. <br/> <br/>As a means of supporting these internal organizations, Honda R&D came to my team with the challenge to build an intelligent platform for learning design thinking. At the core of this challenge, our team was contracted to help their sponsorship with OnRamp, an externship program at Ohio State University where undergrad students use design thinking to research and idenitfy potential opportunity areas within a variety of problem spaces. <br/><br/>
+With the rise of electric and autonomous vehicles, the landscape for the automotive industry is rapidly changing. This means that even the biggest companies have to think creatively and innovatively about the work they're doing. To promote innovation, Honda has established a series of initiatives and organizations throughout their company to establish design thinking methodologies in their research processes. <br/> <br/>As a means of supporting these internal organizations, Honda R&D came to my team with the challenge to build an intelligent platform for learning design thinking. At the core of this challenge, our team was contracted to help their sponsorship with OnRamp, an externship program at Ohio State University where undergrad students use design thinking to research and idenitfy potential opportunity areas within a variety of problem spaces. <br/><br/>
 As budding designers within UX, this was a very meta experience. We had to design a research plan that allowed us to go into the field but also step back and reflect on our own challenges learning these methods. With a problem space that was so close to our own education, we had to approach the statement "You are not the user" with a bit more ambiguity. <br/> <br/>
 <div className="gridRow">
-<img className="stakeholder" src={StakeholerMap} alt="responsive website"/><br/> <br/>
+<Image img={StakeholerMap}></Image><br/> <br/>
 </div>
 <strong>To find out how we could best create value within our problem space, we established three goals in our research:</strong><br/><br/>
 
@@ -195,13 +199,15 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
     <div className="gridRow">
     <div className="gridUnit">
-    <img className="persona" src={BenFullPersona} alt="Snow" />
+    <Image img={BenFullPersona} styleClass="persona"></Image>
+
     </div>
     <div className="gridUnit">
-    <img className="persona" src={MeganFullPersona} />
+    <Image img={MeganFullPersona} styleClass="persona"></Image>
     </div>
     <div className="gridUnit">
-    <img className="persona" src={SarahFullPersona} />
+    <Image img={SarahFullPersona} styleClass="persona"></Image>
+
     </div>
 
       </div>
@@ -216,10 +222,10 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
       <div className="gridRow">
       <div className="gridUnit">
-      <img className="persona" src={EricaFullPersona} />
+      <Image img={EricaFullPersona} styleClass="persona"></Image>
       </div>
       <div className="gridUnit">
-      <img className="persona" src={StevenFullPersona} />
+      <Image img={StevenFullPersona} styleClass="persona"></Image>
       </div>
         </div>
         </div>
@@ -297,7 +303,7 @@ From our insights, our team led a co-design session with our clients at Honda R&
           <div className="section-header">PROTOTYPING</div><br/><br/>
 
           <span className="serif-header">Iterative design and research allowed us to turn our sketches into two meaningful prototypes.</span>
-After testing these initial sketches of each experience, my team came together and highlighted commonalities with the concepts as well as functionality that resonated with our interview participants. This exercise helped us narrow down our selection and create two further developed prototypes.
+After testing these initial sketches of each experience, my team came together and highlighted commonalities with each concept as well as functionality that resonated with our interview participants. This exercise helped us narrow down our selection and create two further developed prototypes.
       <div className="gridRow">
       <img src={EvidenceTracker} />
       <div className="gridUnit">
@@ -326,15 +332,16 @@ A workflow for producing a report and presentation from tagged interview transcr
             <div className="center-content">
             <span className="serif-header">MoSCoW Prioritization helped us scope our hi-fi prototype and create alignment as a team. </span>
             <div className="gridRow m-20">
-              <img src={Moscow1} />
-              <img src={Moscow2} />
-              <img src={Moscow3} />
+            <Image img={Moscow1} styleClass="persona"></Image>
+            <Image img={Moscow2} styleClass="persona"></Image>
+            <Image img={Moscow3} styleClass="persona"></Image>
             </div>
             Though my team mapped out a comprehensive experience for how the evidence tagger would function, we realistically understood that building everything out to hi-fidelity would not be realistic within a two-week sprint. To bring the most value for our client and our project, we aligned on building out the Synthesis board and then creating non-interactive prototypes for the Annotation and Deliver prototypes.<br/><br/>
 
             At a more detailed “feature” level, we also identified which components were most important to develop, then which parts we’d either do if we had time, or wanted to include as sketches within our handoff documents.
 
-            <img src={Scope} /><br/><br/>
+            <Image img={Scope} ></Image>
+<br/><br/>
             From these conversations, we decided to create an interactive prototype of Salmon using React, a javascript library. We wanted to be able to test out how users would search, create, and connect information. Though this was a significant amount of work, we agreed that it would be the most powerful way for us to be able to assess the power of Salmon within a remote environment.
             </div>
 
@@ -376,7 +383,7 @@ A workflow for producing a report and presentation from tagged interview transcr
 
 <div className="gridRow">
   <div className="gridUnit">
-  <img src={SalmonLogo} />
+    <Image img={SalmonLogo} ></Image>
   </div>
   <div className="gridUnit">
 The Salmon in our logo is comprised of two parts: sticky notes representing a classic tool in user research, and the ray of a flashlight searching for insights.
@@ -385,8 +392,7 @@ The Salmon in our logo is comprised of two parts: sticky notes representing a cl
 We also implemented a style guide that we utilized across all product deliverables, from our product website to our final report. <br /><br />
 
 <div className="gridRow">
-<img src={SalmonColors} />
-<img src={SalmonFonts} />
+  <Image img={SalmonColors} ></Image> <Image img={SalmonFonts} ></Image>
 </div>
   </div>
 
