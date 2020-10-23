@@ -1,6 +1,8 @@
 import React from "react"
 import Nav from "../components/Navbar"
 import MyFace from "../assets/msilvestre.jpg"
+import Footer from "../components/Footer"
+
 import { Helmet } from "react-helmet"
 import favicon from "../assets/favicon.png"
 
@@ -20,12 +22,18 @@ export default ()=> (
       <img src={MyFace} alt="this is my face"/>
     </div>
     <div class="about-text">
-      <h1>Hi, I'm Michael</h1>
-      <p>Based in Pittsburgh, PA, I'm a product designer that wants to use technology to help people live their best lives. I will be graduating from Carnegie Mellon University's Masters of Human-Computer Interaction in August 2020.<br/><br/>
-      Previously I worked in marketing and community management for startups in educational technology. Somewhere in between that and CMU, I also worked retail in auto repair and supermarkets. There is a zen to cutting cabbage unlike any Headspace session. <br/><br/>
-      In my free time, I like to DJ ambient records, teach myself to program, and go running when it's not too cold outside.</p>
+      <div className="serif-header">I am a product designer that finds centering people and stakeholders within the design process leads to powerful outcomes. </div>
+      <p>I came into product design through working in marketing and communications for educational technology companies. My experiences engaging with customers and product teams inspired me to transition to the UX field. <br/> <br/>
+
+Most recently, I graduated from Carnegie Mellon University’s Masters in Human-Computer Interaction program where I worked with Honda R&D Americas to build design thinking tools. I’m currently looking for Product Design roles that blend research, design, and strategy. I love to wear many hats and learn new things (for instance, I taught myself React JS to code this very portfolio), a curiosity which extends to how I enter every problem space I enter as a designer. <br/> <br/>
+
+When I’m not in Figma or testing prototypes with users, I like to DJ ambient records, watch Wong Kar Wai movies, and get ever more closer to cooking the perfect tomato sauce.
+
+</p>
     </div>
   </div>
   </div>
+  <Footer />
+
   </div>
 )

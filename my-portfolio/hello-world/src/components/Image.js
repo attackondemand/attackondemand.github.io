@@ -30,7 +30,7 @@ class Img extends Component {
         return (
             <div >
                 <div >
-                    <img onClick={() => this.setState({ lightboxOpen: true })} className={(this.props.styleClass ? this.props.styleClass : '')} src={this.props.img}/>
+                    <img onClick={() => this.setState({ lightboxOpen: true })}  className={(this.props.styleClass ? this.props.styleClass : '')} src={this.props.img}/>
                     {this.state.lightboxOpen && (
                         <Lightbox
                             mainSrc={this.props.img}

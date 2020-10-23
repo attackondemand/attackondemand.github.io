@@ -6,6 +6,9 @@ import { Link } from "gatsby"
 import {SRLWrapper} from "simple-react-lightbox";
 import SimpleReactLightbox from "simple-react-lightbox";
 
+import Image from "../components/Image"
+
+
 import {Carousel, CarouselItem} from 'react-bootstrap'
 import StateraThumb from "../assets/statera-v2.png"
 
@@ -120,19 +123,13 @@ export default ()=> (
   <div className="image-box blue-grey">
   <Fade duration={3000}>
   <div className="images">
-  <SimpleReactLightbox>
-  <SRLWrapper>
-  <a href={Scoreboard} data-attribute="SRL">
-    <img src={Scoreboard} alt="Scoreboard at Gateway High School pool"/>
-    </a>
-    <a href={JourneyMapping} data-attribute="SRL">
-    <img src={JourneyMapping} alt="My team plotting out our user journey maps"/>
-    </a>
-  </SRLWrapper>
-  </SimpleReactLightbox></div>
+  <Image img={Scoreboard} alt="Scoreboard at Gateway High School pool"></Image>
+  <Image img={JourneyMapping} alt="My team plotting out our user journey maps"></Image>
+
+  </div>
+
   <div className="web-caption"><strong>Left:</strong> Scoreboard during a swim meet at Gateway High School. Doing observational studies allowed us to capture important data created during each heat, as well as see swimmer and coach behavior. <strong>Right:</strong> We used this information to help us map our customer and stakeholder journey maps.   </div>
     <div className="mobile-caption"><strong>Top:</strong> Scoreboard during a swim meet at Gateway High School. Doing observational studies allowed us to capture important data created during each heat, as well as see swimmer and coach behavior. <strong>Bottom:</strong> We used this information to help us map our customer and stakeholder journey maps. </div>
-
 
     </Fade>
 
@@ -168,17 +165,11 @@ Ultimately, we highlighted three critical insights that were important for what 
 <div className="image-box blue-grey">
 <div className="section-header"> JOURNEY MAPPING</div><br/><br/>
 <Fade duration={3000}>
+<Image img={SwimmerJourneyMap} alt="Journey map of swimmer"></Image>
+<Image img={CoachJourneyMap} alt="Journey map of coach"></Image>
 
-<SimpleReactLightbox>
-<SRLWrapper>
-<a href={SwimmerJourneyMap} data-attribute="SRL">
-  <img src={SwimmerJourneyMapSmall} alt="Scoreboard at Gateway High School pool"/>
-  </a>
-  <a href={CoachJourneyMap} data-attribute="SRL">
-  <img src={CoachJourneyMapSmall} alt="My team plotting out our user journey maps"/>
-  </a>
-</SRLWrapper>
-</SimpleReactLightbox>
+
+
   <div className="box-content">Our research from interviews and observations also helped us map out the journeys students and coaches undergo from practice to swim meets. Though swim meets are long and arduous for both stakeholders, we found it evident that so much of the impact for meets occurred during the lead up to them.</div>
   </Fade>
 </div>
@@ -211,13 +202,9 @@ We then mocked up storyboards around these opportunity statements, and speed dat
 <div className="box-content">
 <span className="serif-header">Creating an architecture to support student-coach dialogue</span><br/>
 Statera is about creating conversations between students and coaches, and we needed our site architecture to reflect that. Our site flow has a different experienced based on these two users, but both flows are deeply intertwined. While the student experience is about communicating information to coaches, the coach experience centers around processing student athlete needs and how it affects their practices.
-  <div className="center-image"><SimpleReactLightbox>
-  <SRLWrapper>
-  <a href={Architecture} data-attribute="SRL">
-  <img src={Architecture} alt="Mapping out the Statera experience"/>
-  </a> </SRLWrapper>
-  </SimpleReactLightbox></div>
-
+  <div className="center-image">
+  <Image img={Architecture} alt="Mapping out the Statera experience"></Image>
+  </div>
 </div>
 </div>
 <div className="image-box">
