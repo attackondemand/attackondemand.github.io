@@ -100,7 +100,7 @@ export default ()=> (
 
       <strong>Testing lead:</strong> I created testing protocols during our design phase of the project to help us validate concepts, user flows, and better understand user behavior through our prototypes.<br/><br/>
 
-      <strong>Design research:</strong> I oversaw the development of design artifacts, including creation of user personas and customer journey maps, to our team and our client better understand our users.
+      <strong>Design research:</strong> I oversaw the development of design artifacts, including creation of user personas and customer journey maps, to our team and our client better understand our users.<br/><br/>
 
       <strong>Product strategy:</strong> I helped drive product scope and strategy by undertaking a competitive analysis of the field, scoping our MVP through feature prioritization techniques, and designed a roadmap for future iterations of Salmon.
 

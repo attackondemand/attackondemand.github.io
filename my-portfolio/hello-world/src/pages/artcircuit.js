@@ -35,6 +35,7 @@ export default ()=> (
     image={ArtCircuitBanner}
     color="#5D536B"
     title="Art + Human Circuit"
+    sponsor='Client: Metro21: Smart Cities Institute'
     description= 'Bringing communities together to play and engage with art through IoT solutions.'
     team="Team: Amy Lu, Katie McTigue, Matthew Fang, Rissa Lee"
     role="Role: User Research, Archiving and Documentation"
@@ -54,7 +55,7 @@ export default ()=> (
 The Art + Human Circuit is an interactive life-size “circuit” that empowers citizens to connect with public art and each other. Combining Pittsburgh’s cultural and historical identity with its technology-enriched future, the Circuit explores how public art can provide people the opportunity to break away from their daily routines, and to share those moments with the people around them.
 </div>
 
-<div className="image-box light-blue">
+<div className="image-box purple">
 <Fade duration={3000}>
   <div className="images">
   <img src={KatzEyes} alt="Bronze fountain at Agnes R. Katz Plaza"/>
@@ -80,7 +81,7 @@ Public art is an expensive endeavor for a city to undertake and maintain. Though
 
 To get a better sense of how people interacted with public art (and since we were all transplants to Pittsburgh, actually get an opportunity to check it out), we headed to Downtown Pittsburgh. Here we were able to witness the different ways people ignored, photographed, climbed on top of the various installations peppered throughout the city. In addition to observing people, we also interviewed people to find what did or didn’t attract them to downtown’s public art.
 </div>
-<div className="serif-header quote-box"><Fade duration={3000}><div className="quote">"It's important for space to have purpose to draw people to it, whether its for people taking a break from work to be on their phones or listening to music, it provides people an opportunity to interact with space rather than sitting in their urban silo."
+<div className="serif-header quote-box purple"><Fade duration={3000}><div className="quote">"It's important for space to have purpose to draw people to it, whether its for people taking a break from work to be on their phones or listening to music, it provides people an opportunity to interact with space rather than sitting in their urban silo."
 -Tourist from Vermont</div></Fade>
 </div>
 <div className="center-content">
@@ -106,7 +107,7 @@ Through our previous interiews and clustering, we found three paths that were th
 </div>
 
 </div>
-<div className="image-box light-blue">
+<div className="image-box purple">
 <Fade duration={3000}>
   <div className="images">
   <img src={Storyboard} />
@@ -124,7 +125,7 @@ Building off this need, we created an early experience prototype that focused on
 
 We took to the streets of Oakland and tested out our prototype with random passerby. While we originally had in mind that this would be a multiperson experience, we saw that participants took control of the experience to interact with it on their own. Single persons would actually set their backpack down on one tile to see if they could make it light up.
 </div>
-<div className="serif-header quote-box">
+<div className="serif-header quote-box purple">
 "It is a collaboration for 2 people, or a puzzle for 1 person!" - Pittsburgh resident
 </div>
 <div className="center-content">

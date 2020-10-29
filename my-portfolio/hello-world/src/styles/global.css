@@ -306,6 +306,7 @@ display:none}
 
 .about-photo{
   height: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .resume-link{
   text-align:center;
@@ -389,6 +390,7 @@ display:none}
 
 
 
+
 .salmon-journey img{
   width:100%;
 }
@@ -423,7 +425,6 @@ img{
 .quote-box{
   color: white;
   font-size: 2rem;
-  background-color: #9DADBC;
   padding: 5%;
   width: 100vw;
   text-align: center;
@@ -445,7 +446,6 @@ img{
 }
 .img-text-box{
   width: 100vw;
-  height: 90vh;
   margin-left: calc(-50vw + 50%);
   padding: 10%;
 }
@@ -457,7 +457,7 @@ img{
 }
 
 .persona{
-  max-width: 400px;
+  max-width: 300px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -478,6 +478,11 @@ img{
 .pale-green{
   background-color: #7A9E91;
   color:white;
+}
+
+.purple{
+  background-color: #5D536B;
+  color: white;
 }
 .left-content{
   display: flex;
@@ -520,6 +525,15 @@ justify-content: center;
 .section-image img{
     width: 100% !important;
 }
+
+
+.gridUnit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
 
 /* ----------- Non-Retina Screens ----------- */
 
@@ -771,5 +785,9 @@ margin: auto;
   padding: 3rem;
 }
 
+.img-text-box{
+  height: 90vh;
+
+}
 
 }

@@ -36,7 +36,7 @@ export default () => (
       image={HomeBanner}
       color="#9dadbc"
       title="Access Granted."
-      description="I'm Michael. I'm a Pittsburgh-based product designer. I thrive on understanding people's stories and creating experiences around their needs."
+      description="I'm Michael. I'm a product designer that thrives on understanding people's stories and creating experiences around their needs."
     />
     </Fade>
     <Fade duration={3000}>
