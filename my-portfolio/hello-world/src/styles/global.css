@@ -227,11 +227,7 @@ a{
   padding-right: 6%;
 }
 
-#aboutcontent{
-  display: flex;
-  padding: 2%;
-  justify-content: center;
-}
+
 
 .col{
     padding: 2%;
@@ -300,12 +296,13 @@ display:none}
 
 
 .about-text{
-    width: 80%;
+    padding-top: 5%;
+    width: 100%;
     font-size:1.1em
 }
 
 .about-photo{
-  height: 100%;
+  
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .resume-link{
@@ -533,7 +530,12 @@ justify-content: center;
   align-items: center;
   padding: 5%;
 }
-
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ----------- Non-Retina Screens ----------- */
 
@@ -557,13 +559,13 @@ justify-content: center;
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
-
   }
 
   .about-text{
       width: 50%;
       padding-left: 5%;
-      font-size:1.1em
+      font-size:1.1em;
+      padding-top: 0;
   }
 
     #banner-container{
