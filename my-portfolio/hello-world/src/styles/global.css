@@ -139,6 +139,7 @@ nav{
 }
 
 .banner-description{
+  padding-left: 10%;
   padding-right: 10%;
 }
 
@@ -385,7 +386,9 @@ display:none}
 }
 
 
-
+.banner-description{
+  padding-left: 0;
+}
 
 .salmon-journey img{
   width:100%;
