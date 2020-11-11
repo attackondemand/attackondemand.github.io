@@ -12,7 +12,7 @@ import HomeBanner from "../assets/homebanner.png"
 import HomeBanner2 from "../assets/homebanner2.jpg"
 import HomeBanner3 from "../assets/medotme.png"
 
-import UCREThumb from "../assets/ucre-v2.png"
+import UCREThumb from "../assets/ucre-thumb2.png"
 import NanaThumb from "../assets/NanaWallThumb.png"
 import PUIThumb from "../assets/pui-thumb.png"
 import HondaThumb from "../assets/hondathumb2.png"

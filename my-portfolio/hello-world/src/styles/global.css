@@ -139,7 +139,6 @@ nav{
 }
 
 .banner-description{
-  padding-left: 10%;
   padding-right: 10%;
 }
 
@@ -302,7 +301,7 @@ display:none}
 }
 
 .about-photo{
-  
+
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .resume-link{
@@ -606,12 +605,12 @@ justify-content: center;
 
     .banner-title{
       display: flex;
-      max-width: 40%;
+      width: 50%;
       margin: auto;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       padding-bottom: 0%;
+      padding-left: 5%;
       /* vertical-align: middle; */
     }
     .banner-title h1{
