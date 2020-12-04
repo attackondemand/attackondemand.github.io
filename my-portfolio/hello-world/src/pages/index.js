@@ -1,7 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-import Nav from "../components/Navbar"
-import Banner from "../components/Banner-copy"
+import Nav from "../components/Navbar-copy"
+import Banner from "../components/Experimental-banner"
 import Thumbnail from "../components/Thumbnail"
 import Footer from "../components/Footer"
 import "bootstrap/dist/css/bootstrap.css";
@@ -27,9 +27,12 @@ export default () => (
     <title>Michael Silvestre</title>
     <link rel="canonical" href="http://msilvestre.xyz" />
     <link rel="icon" href={favicon} />
-
+<script src="../../navscroll.js"></script>
   </Helmet>
-    <Nav />
+    <Nav
+    logoColor="white"
+    color="white"
+    />
     <Fade duration={2000}>
 
     <Banner
@@ -39,6 +42,7 @@ export default () => (
       description="I'm Michael. I'm a product designer that thrives on understanding people's stories and creating experiences around their needs."
     />
     </Fade>
+    <div className="top-of-site-anchor"></div>
     <Fade duration={3000}>
     <div id="projects">
 

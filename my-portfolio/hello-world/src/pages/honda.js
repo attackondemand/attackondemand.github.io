@@ -1,6 +1,6 @@
 import React from "react"
-import Nav from "../components/Navbar"
-import Banner from "../components/Banner-copy"
+import Nav from "../components/Navbar-copy"
+import Banner from "../components/Experimental-banner-copy"
 import Footer from "../components/Footer"
 import Image from "../components/Image"
 import Fade from "react-reveal/Fade"
@@ -64,7 +64,10 @@ export default ()=> (
     <link rel="icon" href={favicon} />
 
   </Helmet>
-  <Nav />
+  <Nav
+    logoColor="black"
+    color="grey"
+   />
   <Fade duration={3000}>
   <Banner
     image={HondaBanner}

@@ -12,8 +12,8 @@ import Image from "../components/Image"
 import {Carousel, CarouselItem} from 'react-bootstrap'
 import StateraThumb from "../assets/statera-v2.png"
 
-import Nav from "../components/Navbar"
-import Banner from "../components/Banner-copy"
+import Nav from "../components/Navbar-copy"
+import Banner from "../components/Experimental-banner-copy"
 import Footer from "../components/Footer"
 import Pool from "../assets/statera-screenbanner.png"
 import Scoreboard from "../assets/statera-scoreboard.png"
@@ -65,7 +65,10 @@ export default ()=> (
     <link rel="canonical" href="http://msilvestre.xyz" />
     <link rel="icon" href={favicon} />
   </Helmet>
-  <Nav />
+  <Nav
+  logoColor="white"
+  color="white"
+/>
   <Fade duration={3000}>
   <Banner
     image={Pool}

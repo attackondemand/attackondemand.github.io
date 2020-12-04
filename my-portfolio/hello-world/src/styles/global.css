@@ -1,22 +1,17 @@
 @import url('https://use.typekit.net/iqa5cmv.css');
 
 html{
-  /* background-color: #E6EDD3; */
   background-color: #fff;
-  /* font-family: GangsterGrotesk !important; */
   font-family: freight-sans-pro, sans-serif;
-font-weight: 400;
-font-style: normal;
-  /* font-family: franklin-gothic, sans-serif; */
-
-  /* font-family: ff-meta-web-pro, sans-serif; */
-  /* font-family: degular, sans-serif; */
-  /* font-family: neue-haas-grotesk-display, sans-serif; */
-/* font-style: normal;
-font-weight: 100; */
-  /* font-weight: 400; */
+  font-weight: 400;
+  font-style: normal;
 }
-
+.homepage-sub{
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+}
 body{
   font-family: freight-sans-pro, sans-serif !important;
 font-weight: 400;
@@ -41,6 +36,15 @@ font-style: normal;
   padding-bottom: 2%;
   display: block;
 }
+.serif-title{
+  font-family: freight-display-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1.2;
+  color: #fff
+}
+
 .serif-label{
   font-family: freight-display-pro, serif;
   font-weight: 300;
@@ -71,6 +75,19 @@ background: #FF8A00; /* WebKit/Blink Browsers */
 } */
 
 /* Nav styles */
+.homepage-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.homepage-image img{
+object-fit: cover;
+ height: 100%;
+}
 
 nav a:hover{
    color: black;
@@ -85,13 +102,13 @@ nav{
   padding-right: 6% !important;
   padding-left: 5% !important;
   font-weight: bold;
-  position: fixed !important;
     z-index: 2;
     width: 100%;
     overflow: hidden ;
-    background-color:#fff;
 /* background-color: #E6EDD3; */
 }
+
+
 .nav-link{
 
   font-weight: bold;
@@ -111,7 +128,6 @@ nav{
 }
 
 
-
 /* Banner styles */
 .hidden{
   display: none;
@@ -125,16 +141,30 @@ nav{
   flex-direction: column;
   justify-content: center;
 }
-
+#homepage-banner-container{
+  width: 100%;
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+}
 .banner-image{
   padding-top: 10%;
   height: 80%;
   margin: auto;
 }
 
+.homepage-image img{
+  width: 100%;
+  margin: auto;
+}
+
 .banner-title{
   /* background-color: #000; */
   color:#f9f9f9;
+  display:flex;
+  flex-direction: column;
+
   padding-bottom: 10%;
 }
 
@@ -218,7 +248,7 @@ h2{
 
 a{
   text-decoration: none;
-  color: #79745C;
+  /* color: #79745C; */
 }
 .content{
   margin-top: 60px;
@@ -231,7 +261,15 @@ a{
 .col{
     padding: 2%;
 }
-
+.homepage-title{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8%;
+  /* vertical-align: middle; */
+}
 /* Project styles */
 
 #projects{
@@ -277,6 +315,7 @@ a{
 }
 .projectInstance{
 margin: 1%;
+margin-bottom: 5%;
   /* text-align: center; */
   max-width: 400px;
   background-color: #FCFFF5;
@@ -293,7 +332,13 @@ display:none}
   max-width: 60%;
 }
 
+.light-nav{
+  color: black;
+}
 
+.dark-nav{
+  color: white;
+}
 .about-text{
     padding-top: 5%;
     width: 100%;
@@ -407,6 +452,8 @@ img{
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
+
+
 .section-box{
   display: flex;
   align-items: center;
@@ -543,7 +590,18 @@ justify-content: center;
   .serif-header{
       font-size: 2em;
   }
+  .serif-title{
+    font-size: 4em;
+  }
 
+  .homepage-sub{
+      font-size: 1.5em;
+  }
+
+.homepage-image{
+  width: 60%;
+
+}
   .content-container{
       margin: auto;
       width: 60%;
@@ -572,6 +630,14 @@ justify-content: center;
       align-items: center;
       justify-content: space-evenly;
       height: 70vh;
+    }
+
+    #homepage-banner-container{
+      margin-top: 0;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 80vh;
     }
     .banner-image{
       display: flex;
@@ -605,7 +671,6 @@ justify-content: center;
 
     .banner-title{
       display: flex;
-      width: 50%;
       margin: auto;
       flex-direction: column;
       justify-content: center;
@@ -613,6 +678,20 @@ justify-content: center;
       padding-left: 5%;
       /* vertical-align: middle; */
     }
+
+    .homepage-title{
+      display: flex;
+      width: 40%;
+      margin: auto;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 0%;
+      padding-left: 5%;
+      padding-top: 0%;
+      padding-right: 0%;
+      /* vertical-align: middle; */
+    }
+
     .banner-title h1{
       text-align: left;
       font-size: 4em
@@ -795,6 +874,9 @@ margin: auto;
 .img-text-box{
   height: 90vh;
 
+}
+.projectInstance{
+  margin-bottom: 3%;
 }
 
 }
