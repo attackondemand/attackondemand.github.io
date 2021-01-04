@@ -9,9 +9,11 @@ export default (props)=> (
     <img src={props.image} alt="First slide" />
     </div>
     <div className="homepage-title">
+    <Fade bottom delay={100} duration={1000}>
     <div>
     <span className="serif-title">Michael Silvestre </span> <span className="homepage-sub">is a product designer that thrives on understanding people's stories and creating experiences around their needs.</span>
     </div>
+    </Fade>
     </div>
 
   </div>

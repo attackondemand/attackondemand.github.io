@@ -5,16 +5,9 @@ import Footer from "../components/Footer"
 import Image from "../components/Image"
 import Fade from "react-reveal/Fade"
 import { Helmet } from "react-helmet"
-import { SRLWrapper } from "simple-react-lightbox";
 
 
-import Tiles from "../assets/tiles.png"
-import PosterSession from "../assets/postersession.png"
-import Solution from "../assets/solution.png"
 import HondaBanner from "../assets/hondathumb2.png"
-import CrazyEight from "../assets/crazyeight.png"
-import SpeedDating from "../assets/speeddating-me.jpg"
-import Storyboard from "../assets/storyboard.png"
 import SalmonJourney from "../assets/salmon-journey.png"
 import Annotate from "../assets/annotate.gif"
 import Synthesize from "../assets/synthesize.gif"
@@ -59,7 +52,7 @@ export default ()=> (
     <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Salmon Case Study | Creating tools to push forward Design Thinking and innovation." />
     <meta property="og:image" content={HondaBanner} />
-    <title>Michael Silvestre | Product Designer</title>
+    <title>Salmon | Michael Silvestre | Product Designer</title>
     <link rel="canonical" href="http://msilvestre.xyz" />
     <link rel="icon" href={favicon} />
 
@@ -113,11 +106,11 @@ export default ()=> (
   <div className="serif-header">Salmon helps researchers carry evidence through three phases of their research process.</div>
   </div>
   <div className="salmon-journey">
-  <img src={SalmonJourney} />
+  <img src={SalmonJourney} alt="stages of research process that salmon helps with"/>
   </div>
   <div className="img-text-box salmon">
     <div>
-        <Image img={Annotate} className="screen-images"></Image>
+        <Image img={Annotate} alt="salmon's annotation screen" className="screen-images"></Image>
     </div>
     <div className="img-text-text"><span className="serif-header">Create annotations that make organizing evidence simple.</span><br/>
   Researchers can upload interview transcripts, pdf files, and documents and highlight important quotes that they want to carry over into synthesis. The annotation phase in Salmon populates evidence into the right sidebar where they can then add and create tags to do preliminary organization. </div>
@@ -127,10 +120,10 @@ export default ()=> (
 Evidence created from Salmon’s annotation phase populates directly into Salmon’s synthesis board, including contextual information to help teams synthesize research both together or asynchronously. Commenting features allows teammates to resolve disagreements around tagging if they can’t connect in person.
     </div>
 
-    <div><Image img={Synthesize} className="screen-images"></Image></div>
+    <div><Image img={Synthesize} alt="salmon's synthesis board" className="screen-images"></Image></div>
     </div>
     <div className="img-text-box salmon">
-      <div><Image img={Deliver} className="screen-images"></Image></div>
+      <div><Image img={Deliver} alt="deliverables within salmon for presenting your findings" className="screen-images"></Image></div>
       <div className="img-text-text"><span className="serif-header">Generate empathy and credibility while delivering findings.</span><br/>
       When you’re ready to share findings with people outside of your team, Salmon centers your evidence and findings in the delivery process. Clusters created within Salmon’s synthesis phase are populated into the sidebar and allow you to drag and drop evidence straight into your reports or presentations.
       <br/><br/>
@@ -147,7 +140,7 @@ Evidence created from Salmon’s annotation phase populates directly into Salmon
 With the rise of electric and autonomous vehicles, the landscape for the automotive industry is rapidly changing. This means that even the biggest companies have to think creatively and innovatively about the work they're doing. To promote innovation, Honda has established a series of initiatives and organizations throughout their company to establish design thinking methodologies in their research processes. <br/> <br/>As a means of supporting these internal organizations, Honda R&D came to my team with the challenge to build an intelligent platform for learning design thinking. At the core of this challenge, our team was contracted to help their sponsorship with OnRamp, an externship program at Ohio State University where undergrad students use design thinking to research and idenitfy potential opportunity areas within a variety of problem spaces. <br/><br/>
 As budding designers within UX, this was a very meta experience. We had to design a research plan that allowed us to go into the field but also step back and reflect on our own challenges learning these methods. With a problem space that was so close to our own education, we had to approach the statement "You are not the user" with a bit more ambiguity. <br/> <br/>
 <div className="gridRow">
-<Image img={StakeholerMap}></Image><br/> <br/>
+<Image img={StakeholerMap} alt="stakeholder map representing design thinking and innovation within Honda R&D"></Image><br/> <br/>
 </div>
 <strong>To find out how we could best create value within our problem space, we established three goals in our research:</strong><br/><br/>
 
@@ -160,14 +153,14 @@ As budding designers within UX, this was a very meta experience. We had to desig
   <div className="grid-container">
     <div className="gridRow">
     <div className="gridUnit">
-    <img src={StoryboardIcon} />
+    <img src={StoryboardIcon} alt="storyboarding icon"/>
     <span className="serif-header">Storyboarding</span>
     To help overcome this feedback loop, we sought out exploring our problem space through storyboarding. This allowed us to have discussions with people both familiar and unaware of design thinking processes to evaluate where they would be most comfortable within an intervention.
 
     </div>
 
     <div className="gridUnit">
-    <img src={SemiStructureIcon} />
+    <img src={SemiStructureIcon} alt="semi-structured interviews icon" />
     <span className="serif-header">Semi-Structured Interviews</span>
 In addition to storyboarding, we also spoke with a wide net of stakeholders ranging from mechanical engineers at Honda, students within Honda’s OSU internship program called OnRamp, and Design Thinking leaders and experts both at Honda and at other companies.
 
@@ -175,13 +168,13 @@ In addition to storyboarding, we also spoke with a wide net of stakeholders rang
     </div>
     <div className="gridRow">
     <div className="gridUnit">
-    <img src={CompIcon} />
+    <img src={CompIcon} alt="competitive analysis icon"/>
     <span className="serif-header">Competitive Analysis</span>
 Researched and explored over 50 project management, design, and collaboration softwares to see what needs were already addressed and which could use further intervention.
     </div>
 
     <div className="gridUnit">
-    <img src={LitReviewIcon} />
+    <img src={LitReviewIcon} alt="lit review icon"/>
     <span className="serif-header">Lit Review</span>
 We read through case studies of Design Thinking initiatives at other companies, as well as understanding topics around collaboration, artificial intelligence, persuasion and knowledge management systems.
     </div>
@@ -202,14 +195,14 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
     <div className="gridRow">
     <div className="gridUnit">
-    <Image img={BenFullPersona} styleClass="persona"></Image>
+    <Image img={BenFullPersona} alt="persona of Ben Parker, a design thinking strategist" styleClass="persona"></Image>
 
     </div>
     <div className="gridUnit">
-    <Image img={MeganFullPersona} styleClass="persona"></Image>
+    <Image img={MeganFullPersona} alt="persona of Megan Klein, a design thinking instructor" styleClass="persona"></Image>
     </div>
     <div className="gridUnit">
-    <Image img={SarahFullPersona} styleClass="persona"></Image>
+    <Image img={SarahFullPersona} alt="persona of Sarah Bailey, a think tank facilitator" styleClass="persona"></Image>
 
     </div>
 
@@ -225,14 +218,14 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
       <div className="gridRow">
       <div className="gridUnit">
-      <Image img={EricaFullPersona} styleClass="persona"></Image>
+      <Image img={EricaFullPersona} alt="persona of Erica Flores, an OnRamp student" styleClass="persona"></Image>
       </div>
       <div className="gridUnit">
-      <Image img={StevenFullPersona} styleClass="persona"></Image>
+      <Image img={StevenFullPersona} alt="persona of Stephen Moore, a materials engineer" styleClass="persona"></Image>
       </div>
         </div>
         </div>
-        <div className="image-box salmon">
+        <div className="salmon image-box">
         <div className="section-header">RESEARCH INSIGHTS</div><br/><br/>
         <div className="box-content">
         <span className="serif-header">What is preventing Design Thinking students from generating powerful research?</span><br/>
@@ -240,7 +233,7 @@ We read through case studies of Design Thinking initiatives at other companies, 
         </div>
         <div className="gridRow">
         <div className="quotebox">
-        <img src={Steven} />
+        <img src={Steven} alt="Steven icon" />
         <div>
         "I use Control-F a lot."<br/>
         -Materials Engineer
@@ -254,7 +247,7 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
         <div className="gridRow">
         <div className="quotebox">
-        <img src={Steven} />
+        <img src={Steven} alt="Steven icon" />
         <div>
         "Sometimes I struggle understanding the intentions of design decisions made from teams in other locations."<br/>
         -Materials Engineer
@@ -268,7 +261,7 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
         <div className="gridRow">
         <div className="quotebox">
-        <img src={Erica} />
+        <img src={Erica} alt="Erica icon"/>
         <div>
         I tried to show a spreadsheet to communicate my findings and it went awful - figured out quickly, “What’s an easy way a middleschooler could see this?”<br/>
         -OnRamp Student
@@ -282,7 +275,7 @@ We read through case studies of Design Thinking initiatives at other companies, 
 
         <div className="gridRow">
         <div className="quotebox">
-        <img src={Steven} />
+        <img src={Steven} alt="Steven icon"/>
         <div>
         "Human experts are more effective for finding information than searching."<br/>
         -Materials Engineer
@@ -308,7 +301,7 @@ From our insights, our team led a co-design session with our clients at Honda R&
           <span className="serif-header">Iterative design and research allowed us to turn our sketches into two meaningful prototypes.</span>
 After testing these initial sketches of each experience, my team came together and highlighted commonalities with each concept as well as functionality that resonated with our interview participants. This exercise helped us narrow down our selection and create two further developed prototypes.
       <div className="gridRow">
-      <img src={EvidenceTracker} />
+      <img src={EvidenceTracker} alt="evidence tracker prototype"/>
       <div className="gridUnit">
       <div>
       <strong>Prototype #1: “Evidence Tracker”    </strong><br/>
@@ -319,7 +312,7 @@ A workflow for producing a report and presentation from tagged interview transcr
       </div>
       </div>
       <div className="gridRow">
-      <img src={ResearchPocket} />
+      <img src={ResearchPocket} alt="research pocket prototype"/>
       <div className="gridUnit">
       <div>
       <strong>Prototype #2: “Evidence Tracker”    </strong><br/>
@@ -335,15 +328,15 @@ A workflow for producing a report and presentation from tagged interview transcr
             <div className="center-content">
             <span className="serif-header">MoSCoW Prioritization helped us scope our hi-fi prototype and create alignment as a team. </span>
             <div className="gridRow m-20">
-            <Image img={Moscow1} styleClass="persona"></Image>
-            <Image img={Moscow2} styleClass="persona"></Image>
-            <Image img={Moscow3} styleClass="persona"></Image>
+            <Image img={Moscow1} alt="screenshot of excel spreadsheet that we used to perform Moscow prioritization" styleClass="persona"></Image>
+            <Image img={Moscow2} alt="screenshot of excel spreadsheet that we used to perform Moscow prioritization" styleClass="persona"></Image>
+            <Image img={Moscow3} alt="screenshot of excel spreadsheet that we used to perform Moscow prioritization" styleClass="persona"></Image>
             </div>
             Though my team mapped out a comprehensive experience for how the evidence tagger would function, we realistically understood that building everything out to hi-fidelity would not be realistic within a two-week sprint. To bring the most value for our client and our project, we aligned on building out the Synthesis board and then creating non-interactive prototypes for the Annotation and Deliver prototypes.<br/><br/>
 
             At a more detailed “feature” level, we also identified which components were most important to develop, then which parts we’d either do if we had time, or wanted to include as sketches within our handoff documents.
 
-            <Image img={Scope} ></Image>
+            <Image img={Scope} alt="we organized our flow for salmon and then selected synthesis as our primary focus"></Image>
 <br/><br/>
             From these conversations, we decided to create an interactive prototype of Salmon using React, a javascript library. We wanted to be able to test out how users would search, create, and connect information. Though this was a significant amount of work, we agreed that it would be the most powerful way for us to be able to assess the power of Salmon within a remote environment.
             </div>
@@ -354,7 +347,7 @@ A workflow for producing a report and presentation from tagged interview transcr
       As my team developed our prototype to mid-hi fidelity, we identified critical adjustments to the design through our research testing.
             </div>
             <div className="img-text-box">
-              <div><img src={Metadata} alt="responsive website"/></div>
+              <div><img src={Metadata} alt="metadata can be toggled on and off"/></div>
               <div className="img-text-text"><span className="serif-header">Toggle Evidence Metadata</span><br/>
               <strong>Action:  </strong> Allow users to adjust the amount of information on screen during while synthesizing evidence.<br/><br/>
 
@@ -362,7 +355,7 @@ A workflow for producing a report and presentation from tagged interview transcr
             </div>
 
             <div className="img-text-box">
-              <div><img src={Demographics} alt="responsive website"/></div>
+              <div><img src={Demographics} alt="clusters can provide demographic information to get holistic view of higher level findings"/></div>
               <div className="img-text-text"><span className="serif-header">View demographic data to check for biases</span><br/>
               <strong>Action:  </strong> Provide high-level feedback to researchers, clients, and facilitators around the interview data.<br/><br/>
 
@@ -370,7 +363,7 @@ A workflow for producing a report and presentation from tagged interview transcr
             </div>
 
             <div className="section-text-box">
-              <div className="section-image"><img src={DeskResearch} alt="responsive website"/></div>
+              <div className="section-image"><img src={DeskResearch} alt="desk research can be embedded into annotation and synthesis phases of salmon"/></div>
               <div className="img-text-text"><span className="serif-header">Incorporate desk research into synthesis</span><br/>
               <strong>Action:  </strong> Articles and documents can be used in the same way as transcripts.<br/><br/>
 
@@ -386,7 +379,7 @@ A workflow for producing a report and presentation from tagged interview transcr
 
 <div className="gridRow">
   <div className="gridUnit">
-    <Image img={SalmonLogo} ></Image>
+    <Image img={SalmonLogo} alt="the logo we created for Salmon"></Image>
   </div>
   <div className="gridUnit">
 The Salmon in our logo is comprised of two parts: sticky notes representing a classic tool in user research, and the ray of a flashlight searching for insights.
@@ -395,14 +388,14 @@ The Salmon in our logo is comprised of two parts: sticky notes representing a cl
 We also implemented a style guide that we utilized across all product deliverables, from our product website to our final report. <br /><br />
 
 <div className="gridRow">
-  <Image img={SalmonColors} ></Image> <Image img={SalmonFonts} ></Image>
+  <Image img={SalmonColors} alt="salmon's branding colors"></Image> <Image img={SalmonFonts} ></Image>
 </div>
   </div>
 
   <div className="image-box salmon">
   <div className="section-header">MEASURING SUCCESS</div>
 
-  <img src={ReactTest} />
+  <img src={ReactTest} alt="screenshot from testing session of interactive prototype"/>
 
   <div className="box-content">
   We conducted <strong>11 usability tests </strong> of both our product, having users complete a series of tasks within the Annotation, Synthesis, and Deliver phases of Salmon. To get well-rounded feedback of Salmon, we conducted test with Design Thinking facilitators, students, HCI faculty, and tech recruiters to assess the practicality of our design as well as its ability to scale up outside of Honda’s immediate stakeholders.
@@ -418,7 +411,7 @@ Overall, Salmon was met with widespread acclaim? In addition to capturing a real
   <div className="gridUnit pad-5">
   <span className="serif-header"> On usability </span>
   <div className="quotebox">
-  <img src={Megan} />
+  <img src={Megan} alt="megan icon" />
   <div>
   "The interface of dragging things around and rearranging it, it's very familiar, which is great.
 
@@ -433,7 +426,7 @@ So there's no added friction there. But the benefit of this is perhaps we don't 
   <span className="serif-header">Evaluating biases</span>
 
   <div className="quotebox">
-  <img src={Megan} />
+  <img src={Megan} alt="megan icon"/>
   <div>
 "For my own purposes, it would be great to be able to draw clear lines of evidence from the responses and make sure I'm not making an extrapolations or expansions on what was said when I reiterated or summarized."
 <br/>
@@ -447,7 +440,7 @@ So there's no added friction there. But the benefit of this is perhaps we don't 
       <div className="gridUnit pad-5">
       <span className="serif-header">Simplifying workflows</span>
       <div className="quotebox">
-          <img src={Erica} />
+          <img src={Erica} alt="erica icon" />
           <div>
             “It makes the unpleasant part about honing and documenting and organizing aggregating data a lot easier."
             <br/>
@@ -459,7 +452,7 @@ So there's no added friction there. But the benefit of this is perhaps we don't 
       <div className="gridUnit pad-5">
       <span className="serif-header">Desire to use</span>
       <div className="quotebox">
-          <img src={Erica} />
+          <img src={Erica} alt="erica icon" />
           <div>
             “I wish I had this back when I was in OnRamp."
             <br/>
@@ -476,18 +469,18 @@ So there's no added friction there. But the benefit of this is perhaps we don't 
   <span className="serif-header">What's next for Salmon? </span>
   To wrap up our project, I led my team in designing a roadmap for Salmon and how we could potentially build out it's functionality in the future. To do this, we organized what we would want to add to Salmon if we had more time to develop the project, and then clustered those features in terms of feasibility of implementation.
 
-  <img src={Roadmap} /><br/><br/>
+  <img src={Roadmap} alt="roadmap we created for Salmon"/><br/><br/>
   <span className="serif-header">Want to learn more about Salmon? </span>
   Check out our prototypes or head to our product website for further information.
   <div className="gridRow">
   <div class="button-wrapper">
-    <a class="button cta-button" href="https://www.figma.com/proto/24iL9ENJIzEnOsw6N5dN8C/Pitt-Crew-Prototypes?node-id=1663%3A6324&viewport=621%2C227%2C0.03474431857466698&scaling=min-zoom" target="_blank"><strong>Figma Prototype</strong></a>
+    <a class="button cta-button" href="https://www.figma.com/proto/24iL9ENJIzEnOsw6N5dN8C/Pitt-Crew-Prototypes?node-id=1663%3A6324&viewport=621%2C227%2C0.03474431857466698&scaling=min-zoom" target="_blank" rel="noopener noreferrer"><strong>Figma Prototype</strong></a>
   </div>
   <div class="button-wrapper">
-    <a class="button cta-button" href="https://honda-capstone-salmon.netlify.app/" target="_blank"><strong>React Prototype</strong></a>
+    <a class="button cta-button" href="https://honda-capstone-salmon.netlify.app/" target="_blank" rel="noopener noreferrer"><strong>React Prototype</strong></a>
   </div>
   <div class="button-wrapper">
-    <a class="button cta-button" href="http://cmu-pitt-crew.webflow.io/" target="_blank"><strong>Product Website</strong></a>
+    <a class="button cta-button" href="http://cmu-pitt-crew.webflow.io/" target="_blank" rel="noopener noreferrer"><strong>Product Website</strong></a>
   </div>
   </div>
   </div>

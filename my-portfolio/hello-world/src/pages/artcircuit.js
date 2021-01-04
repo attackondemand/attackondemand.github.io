@@ -5,17 +5,11 @@ import Footer from "../components/Footer"
 import Fade from "react-reveal/Fade"
 import { Helmet } from "react-helmet"
 
-import Tiles from "../assets/tiles.png"
-import PosterSession from "../assets/postersession.png"
-import Solution from "../assets/solution.png"
+
 import ExperiencePrototype from "../assets/experience-prototype.png"
-import ThinkAloud from "../assets/thinkaloud.png"
 import KatzEyes from "../assets/katz-image.png"
 import Magnolias from "../assets/mags-image.png"
 import ArtCircuitBanner from "../assets/ucre-banner4.png"
-import CrazyEight from "../assets/crazyeight.png"
-import SpeedDating from "../assets/speeddating-me.jpg"
-import NorthShore from "../assets/northshore-playground.jpg"
 import Storyboard from "../assets/storyboard.png"
 import favicon from "../assets/favicon.png"
 
@@ -113,8 +107,8 @@ Through our previous interiews and clustering, we found three paths that were th
 <div className="image-box purple">
 <Fade duration={3000}>
   <div className="images">
-  <img src={Storyboard} />
-  <img src={ExperiencePrototype} />
+  <img src={Storyboard} alt="storyboarding used to identify needs within the problem space" />
+  <img src={ExperiencePrototype} alt="a prototype we created to test and validate interactions"/>
   </div>
   <div className="web-caption">Left: Our team developed storyboards and performed speed dating sessions to see which needs we brainstormed had the most validation. Right: We created an experience prototype and had random passerby engage with the installation to see if our interactions were meaningful and made sense.</div>
     <div className="mobile-caption">Top: Our team developed storyboards and performed speed dating sessions to see which needs we brainstormed had the most validation. Bottom: We created an experience prototype and had random passerby engage with the installation to see if our interactions were meaningful and made sense.</div>

@@ -1,6 +1,7 @@
 import React from "react"
 import {Nav, Navbar} from 'react-bootstrap'
 import { withPrefix } from 'gatsby'
+import Fade from "react-reveal/Fade"
 
 export default class gaga extends React.Component {
   constructor(props) {
@@ -40,14 +41,16 @@ render() {
           position: this.state.status === "top" ? "absolute": "fixed",
         }}
         expand="lg px-4">
+        <Fade top delay={100} duration={1000}>
     <Navbar.Brand style={{
       color: this.state.status === "top" ? this.props.logoColor : "black",
     }}
 
-    href="/">Michael Silvestre</Navbar.Brand>
+    href="/">Michael Silvestre</Navbar.Brand></Fade>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
+      <Fade top delay={100} duration={1000}>
         <Nav.Link style={{
           color: this.state.status === "top" ? this.props.color : "grey",
         }}
@@ -60,6 +63,7 @@ render() {
           color: this.state.status === "top" ? this.props.color : "grey",
         }}
          href={withPrefix('/MichaelSilvestre_Resume.pdf')} target="_blank" rel="noopener noreferrer" >Resume</Nav.Link>
+         </Fade>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

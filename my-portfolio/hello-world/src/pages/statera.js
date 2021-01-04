@@ -1,15 +1,10 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
-
-import {SRLWrapper} from "simple-react-lightbox";
-import SimpleReactLightbox from "simple-react-lightbox";
 
 import Image from "../components/Image"
 
 
-import {Carousel, CarouselItem} from 'react-bootstrap'
 import StateraThumb from "../assets/statera-v2.png"
 
 import Nav from "../components/Navbar-copy"
@@ -20,20 +15,11 @@ import Scoreboard from "../assets/statera-scoreboard.png"
 import JourneyMapping from "../assets/statera-journeymapping.png"
 import SwimmerJourneyMap from "../assets/statera-parents-perspective.png"
 import CoachJourneyMap from "../assets/statera-coach-perspective.png"
-import SwimmerJourneyMapSmall from "../assets/statera-parents-perspective-small.png"
-import CoachJourneyMapSmall from "../assets/statera-coach-perspective-small.png"
-import Responsive from "../assets/statera-responsive.png"
 import Responsive2 from "../assets/new-responsive.png"
-import StressAssessment from "../assets/stressassessment.webm"
-import StressAssessmentBackup from "../assets/stress-assessment.mp4"
 import StressAssessmentGif from "../assets/stress-assessment.gif"
-import Performance from "../assets/Coach - Performance Desktop.png"
-import PerformanceDemo from "../assets/Performance-Demo.png"
 import Performance2 from "../assets/Performance-Statera-2.png"
 import Architecture from "../assets/statera-architecture.png"
-import Wireframe1 from "../assets/statera-wireframe-1.jpg"
 import Wireframe1Small from "../assets/statera-wireframe-1 small.jpg"
-import Wireframe2 from "../assets/statera-wireframe-2.jpg"
 import Wireframe2Small from "../assets/statera-wireframe-2-small.jpg"
 import Wireframe4Small from "../assets/statera-wireframe4-small.png"
 import Wireframe5Small from "../assets/statera-wireframe5-small.png"
@@ -45,14 +31,7 @@ import Wireframe3 from "../assets/stress-web-small.png"
 
 
 import favicon from "../assets/favicon.png"
-const options ={
-  settings: {
-    autoplaySpeed: 0,
-  },
-  buttons: {
-    showCloseButton: true,
-  }
-}
+
 
 export default ()=> (
 
@@ -61,7 +40,7 @@ export default ()=> (
     <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Statera: Helping student athletes communicate stress to coaches and reduce burnout" />
     <meta property="og:image" content={StateraThumb} />
-    <title>Michael Silvestre</title>
+    <title>Statera | Michael Silvestre | Product Designer</title>
     <link rel="canonical" href="http://msilvestre.xyz" />
     <link rel="icon" href={favicon} />
   </Helmet>

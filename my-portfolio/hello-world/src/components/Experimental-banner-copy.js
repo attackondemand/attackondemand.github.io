@@ -9,6 +9,7 @@ export default (props)=> (
     <img src={props.image} alt="First slide" />
     </div>
     <div className="homepage-title mobile-title">
+    <Fade bottom delay={100} duration={1000}>
     <div className={`banner-title ${props.mode}`}>
     <h1>{props.title}</h1>
     <h3>{props.description}</h3><br />
@@ -17,6 +18,7 @@ export default (props)=> (
     {props.team}<br />
     {props.projectLength}<br />
     </div>
+    </Fade>
     </div>
 
   </div>

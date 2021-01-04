@@ -9,25 +9,22 @@ import { Helmet } from "react-helmet"
 
 import StateraThumb from "../assets/statera-v2.png"
 import HomeBanner from "../assets/homebanner.png"
-import HomeBanner2 from "../assets/homebanner2.jpg"
-import HomeBanner3 from "../assets/medotme.png"
 
 import UCREThumb from "../assets/ucre-thumb2.png"
 import NanaThumb from "../assets/NanaWallThumb.png"
-import PUIThumb from "../assets/pui-thumb.png"
 import HondaThumb from "../assets/hondathumb2.png"
 import favicon from "../assets/favicon.png"
 
-import { motion } from "framer-motion"
 
 export default () => (
   <div id="outercontainer">
   <Helmet>
-    <meta charSet="utf-8" />
-    <title>Michael Silvestre</title>
+  <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Michael Silvestre | Product Designer" />
+  <meta property="og:image" content={HomeBanner} />
+    <title>Michael Silvestre | Product Designer</title>
     <link rel="canonical" href="http://msilvestre.xyz" />
     <link rel="icon" href={favicon} />
-<script src="../../navscroll.js"></script>
   </Helmet>
     <Nav
     logoColor="white"
